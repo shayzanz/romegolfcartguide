@@ -44,6 +44,24 @@ Claude è il responsabile della crescita SEO + GEO/AEO (traffico da Google e dal
 - Ahrefs e Ubersuggest: piani gratuiti, dati limitati.
 - Le conversioni reali sono nelle dashboard Viator e GetYourGuide: chiedere a Shay gli export quando servono.
 
+## Procedura di ogni GO
+Shay scrive GO circa ogni 1–2 giorni. A ogni GO, nell'ordine:
+1. **Dati**:
+   - Search Console via Windsor: ultimi 7 e 28 giorni contro il periodo precedente, per query e per pagina;
+   - GA4 via Windsor (proprietà `565301251`): eventi `affiliate_click` e `whatsapp_click` per pagina e tour, pagine di ingresso;
+   - Ahrefs e Ubersuggest dove il piano gratuito lo permette (DR, volumi, idee di keyword).
+2. **Scelta**: 1–3 interventi a più alto impatto, partendo dal piano in `seo/audit-2026-11-20.md` e dai dati nuovi. Cosa guardare:
+   - query in posizione 5–20;
+   - pagine con impressioni ma CTR basso;
+   - domande nuove;
+   - stagionalità;
+   - pagine che portano clic affiliati.
+3. **Lavoro**: modifiche al sito o contenuti nuovi.
+   - Non riscrivere la stessa pagina più di una volta ogni 10–14 giorni: Google ha bisogno di tempo per rivalutarla. Annota nel log quando una pagina è stata toccata.
+4. **Verifica e pubblicazione**: build, controlli, commit e push su `main` (Netlify pubblica da solo), ping IndexNow.
+5. **Log**: aggiorna `seo-log.md`.
+6. **Report a Shay** in italiano semplice, 5–10 righe: cosa è cambiato nei dati, cosa ho fatto, cosa gli chiedo (solo se serve un suo ok per azioni esterne, con il testo esatto pronto da approvare).
+
 ## Registro
 Ogni sessione GO aggiunge una voce in cima a `seo-log.md`:
 - data;
