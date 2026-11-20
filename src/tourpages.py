@@ -1,16 +1,34 @@
 # Builds /tour/<id>/ pages from the TOURS data in assets/tours.js
 import json, subprocess, html, os
 
-def load_tours():
-    js = r"""
+_JS = r"""
 const fs=require('fs'), vm=require('vm');
 const code=fs.readFileSync(process.argv[1],'utf8');
 const stub={documentElement:{lang:'en'},querySelectorAll:()=>[],querySelector:()=>null,createElement:()=>({setAttribute(){}}),body:{appendChild(){}}};
 const ctx={document:stub, console, window:{}};
-vm.runInNewContext(code+';this.__T=TOURS;', ctx);
-process.stdout.write(JSON.stringify(ctx.__T));
+vm.runInNewContext(code+';this.__T=TOURS;this.__L=Object.fromEntries(Object.entries(LISTS).map(([k,f])=>[k,TOURS.filter(f).map(t=>t.id)]));', ctx);
+process.stdout.write(JSON.stringify(process.argv[2]==='lists'?ctx.__L:ctx.__T));
 """
-    return json.loads(subprocess.check_output(["node", "-e", js, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site", "assets", "tours.js")]))
+
+def load_tours():
+    return json.loads(subprocess.check_output(["node", "-e", _JS, TOURS_JS]))
+
+TOURS_JS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site", "assets", "tours.js")
+
+def load_lists():
+    """Tour ids for each list key used by data-tours (same filters as tours.js)."""
+    return json.loads(subprocess.check_output(["node", "-e", _JS, TOURS_JS, "lists"]))
+
+OPERATORS = {"Biga Tours", "Rolling Rome", "IterItaly"}
+
+def guide_for(t):
+    """The guide that best matches a tour, with a descriptive anchor."""
+    if t.get("catacombs"): return "/catacombs-appian-way-golf-cart-tour/", "Appian Way and catacombs golf cart tours compared"
+    if t.get("cruise") or t["id"] == "cruise": return "/civitavecchia-cruise-golf-cart-tour-rome/", "golf cart tours from Civitavecchia cruise port"
+    if t.get("night") and t["id"] != "custom": return "/rome-night-golf-cart-tour/", "evening and night golf cart tours in Rome"
+    if t.get("food"): return "/rome-golf-cart-food-tour/", "golf cart tours with food and gelato stops"
+    if t.get("type") == "private": return "/private-golf-cart-tour-rome/", "private golf cart tours in Rome compared"
+    return "/best-golf-cart-tours-rome/", "the best golf cart tours in Rome, by category"
 
 # Indicative stops (name, lat, lng, note)
 P = {
@@ -106,7 +124,9 @@ def build(head, NAV, footer, U, SITE, write):
         rel = "".join(f'<a href="/tour/{x["id"]}/"><img loading="lazy" src="{U(x["img"],200)}" alt="" width="72" height="56">{html.escape(x["name"])}</a>' for x in others)
         path = f"/tour/{t['id']}/"
         urls.append(path)
-        title = f"{t['name']} – Route, Price & Details | Rome Golf Cart Guide"
+        title = (f"{t['name']} by {t['by']} – Route & Details" if t['by'] in OPERATORS
+                 else f"{t['name']} – Route, Price & Details | Rome Golf Cart Guide")
+        gurl, ganchor = guide_for(t)
         desc = f"{t['name']}: {t['dur']}, {kind.lower()}, {'hotel pickup available' if t['pickup'] else 'meeting point in the center'}. See the indicative route on a map, what's included and how to book."
         ld = [{"@context":"https://schema.org","@type":"TouristTrip","name":t['name'],"description":t['text'],
                "touristType":kind,"image":U(t['img'],1200),
@@ -132,6 +152,7 @@ def build(head, NAV, footer, U, SITE, write):
       <h2 style="margin-top:0">About this tour</h2>
       <p>{html.escape(t['text'])}</p>
       {EXTRA.get(t['id'],'')}
+      <p class="guidelink">Not sure this is the right one? See <a href="{gurl}">{ganchor}</a>.</p>
       <div class="incl" style="margin:14px 0 6px">{''.join(f'<span>{html.escape(x)}</span>' for x in t['incl'])}</div>
       <h2>Indicative route</h2>
       <p class="mapnote">Stops and order change with traffic, closures and, on private tours, your wishes. This is the typical route for this kind of tour, not a fixed itinerary.</p>

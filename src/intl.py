@@ -4,6 +4,13 @@ import pages_es, pages_de
 
 LANGS = [pages_es, pages_de]
 V = "20261106"
+LASTMOD = {}
+_M = {"es": ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
+      "de": ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"]}
+def local_date(iso, c):
+    y, m, d = iso.split("-")
+    return (f"Actualizado el {int(d)} de {_M['es'][int(m)-1]} de {y}" if c == "es"
+            else f"Aktualisiert am {int(d)}. {_M['de'][int(m)-1]} {y}")
 
 def nav(L, CART, WA_ICON):
     c = L["code"]
@@ -65,9 +72,12 @@ def guide(p, L, mod, ctx):
     head, U, SITE = ctx["head"], ctx["U"], ctx["SITE"]
     c = L["code"]
     path = f"/{c}/{p['slug']}/"
+    dmod = p.get("modified", "2026-11-06")
+    if "modified" in p:
+        LASTMOD[path] = dmod
     lds = [
         {"@context":"https://schema.org","@type":"Article","headline":p["h1"],"description":p["desc"],"inLanguage":c,
-         "image":U(p["img"],1200),"dateModified":"2026-11-06","datePublished":"2026-11-06",
+         "image":U(p["img"],1200),"dateModified":dmod,"datePublished":"2026-11-06",
          "author":{"@type":"Organization","name":"Rome Golf Cart Guide","url":SITE+"/about/"},
          "publisher":{"@type":"Organization","name":"Rome Golf Cart Guide","url":SITE+"/"},"mainEntityOfPage":SITE+path},
         {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
@@ -90,7 +100,7 @@ def guide(p, L, mod, ctx):
 <section class="section">
   <div class="wrap article-grid">
     <article class="prose">
-      <p class="updated">{L['updated']}</p>
+      <p class="updated">{local_date(dmod, c) if "modified" in p else L['updated']}</p>
       <div class="answer"><b>{L['quick']}</b><p>{html.escape(p['answer'])}</p></div>
       {p['body']}
     </article>
@@ -138,6 +148,7 @@ def home(L, mod, ctx):
     <p>{html.escape(L['home_lead'])}</p>
   </div>
 </section>
+{ctx.get("SEASON", {}).get(c, "")}
 <section class="section" id="tours">
   <div class="wrap">
     <div class="points" style="margin:0 0 26px">{points}</div>

@@ -269,24 +269,67 @@ faqs=[
 related=["tour-privado-carrito-golf-roma","mejores-tours-carrito-golf-roma","roma-en-carrito-de-golf-personas-mayores","precio-tour-carrito-golf-roma"],
 ),
 dict(
-slug="luces-navidad-roma-carrito-golf", en="rome-christmas-lights-tour", nav="Luces de Navidad",
-title="Luces de Navidad en Roma en carrito de golf: árboles y mercadillos (2026)",
-desc="Las luces de Navidad de Roma en carrito de golf: Via del Corso, Via Condotti, Plaza de España, Piazza del Popolo, el belén de San Pedro y el mercadillo de Piazza Navona.",
-h1="Las luces de Navidad de Roma en carrito de golf",
-lead="Las tardes de diciembre en Roma son mágicas, y frías. Un tour nocturno en carrito es la forma más cómoda de ver las luces.",
+slug="luces-navidad-roma-carrito-golf", en="rome-christmas-lights-tour", nav="Luces de Navidad 2026",
+modified="2026-11-20",
+title="Luces de Navidad en Roma 2026: fechas, dónde verlas y tour nocturno",
+desc="Navidad 2026 en Roma: el árbol de San Pedro se enciende el 7 de diciembre, el mercadillo de Piazza Navona hasta el 6 de enero, las mejores calles con luces y una ruta fácil en carrito de golf.",
+h1="Luces de Navidad en Roma 2026: fechas, dónde verlas y cómo recorrerlas",
+lead="Las fechas de 2026 que hemos podido confirmar, dónde están las luces y una ruta de tarde para verlas sin caminar kilómetros con frío.",
 img=COLOSSEUM_NIGHT, img_alt="El Coliseo iluminado de noche",
-answer="Las luces de Navidad de Roma suelen encenderse hacia el 8 de diciembre y siguen hasta la Epifanía, el 6 de enero. Un tour nocturno de 2–3 horas en carrito puede recorrer las luces de Via del Corso y Via dei Condotti, los árboles de la Plaza de España y Piazza del Popolo, el mercadillo de Piazza Navona y el árbol y el belén de la Plaza de San Pedro.",
+answer="En 2026 el árbol de Navidad de la Plaza de San Pedro se enciende el lunes 7 de diciembre a las 17:30. El mercadillo de Piazza Navona puede abrir desde el 1 de diciembre y dura hasta la Epifanía, el 6 de enero de 2027. Las luces de Via del Corso se instalaron a principios de noviembre y suelen encenderse a principios de diciembre. Los mejores sitios son Via del Corso, Via dei Condotti y la Plaza de España, Piazza Venezia, Piazza Navona, la Plaza de San Pedro y el Trastevere. Un tour de tarde de 2–3 horas en carrito de golf recorre casi todos.",
 body="""
-<h2>Qué ver</h2>
-<ul><li><b>Via del Corso:</b> luces entre Piazza Venezia y Piazza del Popolo.</li><li><b>Via dei Condotti y Plaza de España:</b> la calle de las grandes marcas, con un gran árbol en lo alto de la escalinata.</li><li><b>Piazza del Popolo:</b> en los últimos años, el árbol principal de la ciudad.</li><li><b>Piazza Navona:</b> el mercadillo navideño tradicional, con dulces y tiovivo, hasta el 6 de enero.</li><li><b>Plaza de San Pedro:</b> el gran árbol del Vaticano y el belén.</li></ul>
-<h2>Consejos para diciembre</h2>
-<ul><li>Reserva hacia las 17:00–18:00, justo al anochecer.</li><li>Abrígate: las tardes de diciembre suelen estar entre 5 y 10 °C.</li><li>Evita el 24, 25 y 31 de diciembre salvo que el operador confirme que hay tour.</li></ul>
-<p>Las fechas exactas cambian cada año; consulta los anuncios oficiales de la ciudad más cerca de la fecha.</p>
+<h2>Navidad 2026 en Roma: las fechas</h2>
+<p>Comprobado el 20 de noviembre de 2026. Roma no suele anunciar con mucha antelación cuándo se encienden las luces, así que solo ponemos lo que ya se ha publicado.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Qué</th><th>Cuándo</th><th>Estado</th></tr></thead>
+<tbody>
+<tr><td>Encendido del árbol de San Pedro</td><td>Lunes 7 de diciembre de 2026, 17:30</td><td>Confirmado por el Vaticano</td></tr>
+<tr><td>Belén de la Plaza de San Pedro</td><td>Se está montando en la plaza</td><td>Fecha de inauguración sin anunciar</td></tr>
+<tr><td>Mercadillo de Piazza Navona</td><td>Desde principios de diciembre (no antes del 1) hasta el 6 de enero de 2027</td><td>Periodo confirmado, día de apertura aún sin anunciar</td></tr>
+<tr><td>Luces de Via del Corso</td><td>Instaladas a principios de noviembre, suelen encenderse a principios de diciembre</td><td>Fecha de encendido sin anunciar</td></tr>
+<tr><td>Inmaculada Concepción</td><td>Martes 8 de diciembre de 2026, festivo</td><td>Fecha fija</td></tr>
+<tr><td>Epifanía, fin de la temporada</td><td>Miércoles 6 de enero de 2027</td><td>Fecha fija</td></tr>
+</tbody>
+</table></div>
+<p>El árbol del Vaticano de este año es un abeto blanco de 24 metros del Parque Nacional del Pollino, en el sur de Italia, y se encenderá a la vez que el gran árbol del monte Ingino en Gubbio.</p>
+
+<h2>Dónde ver las luces</h2>
+<ul>
+<li><b>Via del Corso:</b> la gran calle comercial, iluminada desde Piazza Venezia hacia Piazza del Popolo.</li>
+<li><b>Via dei Condotti y Plaza de España:</b> la calle de las grandes marcas y la plaza al pie de la escalinata, las decoraciones más fotografiadas de la ciudad.</li>
+<li><b>Piazza Venezia:</b> donde suele ponerse el árbol oficial de la ciudad, delante del Vittoriano.</li>
+<li><b>Piazza Navona:</b> el mercadillo tradicional de la Befana, con puestos, dulces y tiovivo, abierto hasta tarde.</li>
+<li><b>Plaza de San Pedro:</b> el árbol del Vaticano y el belén, iluminados cada tarde hasta el final de la Navidad.</li>
+<li><b>Trastevere:</b> luces colgadas sobre las calles estrechas, ideal para cenar al final.</li>
+</ul>
+
+<h2>Una ruta sencilla de tarde</h2>
+<ol>
+<li><b>17:00, Piazza Venezia:</b> empieza nada más anochecer, en el árbol de la ciudad.</li>
+<li><b>Via del Corso y Via dei Condotti</b> hasta la Plaza de España.</li>
+<li><b>Fontana di Trevi:</b> iluminada todo el año y más tranquila de noche.</li>
+<li><b>Piazza Navona:</b> parada en el mercadillo.</li>
+<li><b>Plaza de San Pedro:</b> el árbol y el belén.</li>
+<li><b>Trastevere:</b> cena para terminar.</li>
+</ol>
+<p>A pie son unos 6–7 km. En carrito de golf cabe en 2–3 horas, con paradas para fotos.</p>
+
+<h2>Consejos</h2>
+<ul>
+<li>Reserva para las 17:00–18:00, justo después del atardecer (hacia las 16:40 en diciembre).</li>
+<li>Abrígate: las tardes de diciembre suelen estar entre 5 y 10 °C y los carritos van abiertos por los lados.</li>
+<li>El 7 y 8 de diciembre y los fines de semana antes de Navidad son las tardes con más gente: reserva con unos días de antelación.</li>
+<li>El 24, 25 y 31 de diciembre confirma que el operador trabaja antes de organizarte.</li>
+<li>Si quieres una ruta privada pensada para las luces, escríbenos por WhatsApp y la organizamos con un operador local.</li>
+</ul>
 """,
 tours="night",
 faqs=[
-("¿Cuándo se encienden las luces de Navidad en Roma?","Normalmente hacia el 8 de diciembre, y siguen hasta el 6 de enero."),
-("¿Hay mercadillo de Navidad en Roma?","Sí, el tradicional de Piazza Navona, normalmente abierto hasta el 6 de enero."),
+("¿Cuándo se encienden las luces de Navidad en Roma en 2026?","El árbol de la Plaza de San Pedro se enciende el 7 de diciembre de 2026 a las 17:30. Las luces de Via del Corso se instalaron a principios de noviembre; la ciudad suele encenderlas a principios de diciembre y las mantiene hasta el 6 de enero."),
+("¿Cuándo abre el mercadillo de Navidad de Piazza Navona en 2026?","Puede abrir desde el 1 de diciembre de 2026 y cierra el 6 de enero de 2027. El día exacto se suele anunciar a finales de noviembre (en 2025 abrió el 6 de diciembre y en 2024 el 8)."),
+("¿Dónde están las mejores luces de Navidad de Roma?","Via del Corso, Via dei Condotti y la Plaza de España, Piazza Venezia, Piazza Navona, la Plaza de San Pedro y el Trastevere."),
+("¿De dónde viene el árbol de Navidad del Vaticano de 2026?","Es un abeto blanco de 24 metros del Parque Nacional del Pollino, regalo del municipio de Terranova di Pollino."),
+("¿Merece la pena un tour en carrito de golf en diciembre?","Sí, si vas abrigado. Un tour de tarde une las luces en 2–3 horas, en lugar de 6–7 km a pie con frío."),
 ],
 related=["roma-de-noche-carrito-golf","mejores-tours-carrito-golf-roma","tour-privado-carrito-golf-roma","roma-en-carrito-de-golf-con-ninos"],
 ),

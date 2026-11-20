@@ -38,7 +38,7 @@ def head(title, desc, path, img, extra_ld=()):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20261106">
+<link rel="stylesheet" href="/assets/style.css?v=20261120">
 {ld}</head>
 <body>
 """
@@ -104,16 +104,43 @@ def related(slugs):
 def faq_html(faqs):
     return '<div class="faq">' + "".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>" for q,a in faqs) + "</div>"
 
+import tourpages as _tp
+_TOURS = {t["id"]: t for t in _tp.load_tours()}
+_LISTS = _tp.load_lists()
+
+def tour_links(key, limit=8):
+    """Plain HTML links to the tour detail pages in a list, so crawlers find them without JavaScript."""
+    ids = [i for i in _LISTS.get(key, []) if i != "custom"][:limit]
+    if not ids:
+        return ""
+    links = " · ".join(f'<a href="/tour/{i}/">{html.escape(_TOURS[i]["name"])}</a>' for i in ids)
+    return f'<p class="tourlinks"><b>Route maps and details:</b> {links}</p>'
+
 def tour_block(p):
     if p.get("tours"):
-        return f'<div class="tourlist-wrap" data-tours="{p["tours"]}"></div>'
+        return f'<div class="tourlist-wrap" data-tours="{p["tours"]}"></div>' + tour_links(p["tours"])
     return f'<div data-gyg-ids="{p["gyg_ids"]}" data-gyg-title="" data-gyg-note=""></div>'
+
+MONTHS_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+def nice_date(iso):
+    y, m, d = iso.split("-")
+    return f"{int(d)} {MONTHS_EN[int(m)-1]} {y}"
+
+# Seasonal strip shown under the hero on the home pages and at the top of related guides.
+# Remove after 6 January 2027 (set SEASON_ON = False).
+SEASON_ON = True
+SEASON = {
+    "en": '<div class="season"><div class="wrap"><b>Christmas 2026:</b> St. Peter\'s tree is lit on 7 December. <a href="/rome-christmas-lights-tour/">Dates, best spots and evening tours &rarr;</a></div></div>',
+    "es": '<div class="season"><div class="wrap"><b>Navidad 2026:</b> el árbol de San Pedro se enciende el 7 de diciembre. <a href="/es/luces-navidad-roma-carrito-golf/">Fechas, dónde ver las luces y tours de tarde &rarr;</a></div></div>',
+    "de": '<div class="season"><div class="wrap"><b>Weihnachten 2026:</b> Der Baum am Petersplatz leuchtet ab 7. Dezember. <a href="/de/weihnachtsbeleuchtung-rom-golfcart/">Termine, beste Orte und Abendtouren &rarr;</a></div></div>',
+} if SEASON_ON else {"en": "", "es": "", "de": ""}
 
 def guide(p):
     path = f'/{p["slug"]}/'
+    mod = p.get("modified", UPDATED_ISO)
     lds = [
         {"@context":"https://schema.org","@type":"Article","headline":p["h1"],"description":p["desc"],
-         "image":U(p["img"],1200),"dateModified":UPDATED_ISO,"datePublished":UPDATED_ISO,
+         "image":U(p["img"],1200),"dateModified":mod,"datePublished":UPDATED_ISO,
          "author":{"@type":"Organization","name":"Rome Golf Cart Guide","url":SITE+"/about/"},
          "publisher":{"@type":"Organization","name":"Rome Golf Cart Guide","url":SITE+"/"},
          "mainEntityOfPage":SITE+path},
@@ -138,7 +165,7 @@ def guide(p):
 <section class="section">
   <div class="wrap article-grid">
     <article class="prose">
-      <p class="updated">Updated {UPDATED}</p>
+      <p class="updated">Updated {nice_date(mod) if "modified" in p else UPDATED}</p>
       <div class="answer"><b>Quick answer</b><p>{html.escape(p['answer'])}</p></div>
       {p['body']}
     </article>
@@ -217,7 +244,7 @@ def not_found():
 
 def home():
     h = open(os.path.join(ROOT, "src", "templates", "index.html")).read()
-    h = re.sub(r"<style>.*?</style>", '<link rel="stylesheet" href="/assets/style.css?v=20261106">', h, flags=re.S)
+    h = re.sub(r"<style>.*?</style>", '<link rel="stylesheet" href="/assets/style.css?v=20261120">', h, flags=re.S)
     h = re.sub(r"<script>\s*/\* ===== Settings.*?</script>", '<script src="/assets/tours.js?v=20261106"></script>', h, flags=re.S)
     h = h.replace('<meta name="theme-color" content="#1f4fd1">', '<meta name="theme-color" content="#1f4fd1">\n<link rel="icon" href="/favicon.svg" type="image/svg+xml">')
     h = re.sub(r'<header class="bar">.*?</header>\n', NAV, h, flags=re.S)
@@ -236,6 +263,8 @@ def home():
 
 <section class="section" id="faq\""""
     h = h.replace('<section class="section" id="faq"', guides, 1)
+    # seasonal strip (remove after 6 January 2027)
+    h = h.replace('</section>', '</section>\n' + SEASON["en"], 1)
     # text links inside home content
     h = h.replace("<a href=\"#\" class=\"js-wa\" data-msg=\"Hi! I'm interested in a night golf cart tour in Rome. Date: … People: …\">Ask about night tours</a>", '<a href="/rome-night-golf-cart-tour/">Read the night tour guide</a>')
     h = h.replace("<a href=\"#\" class=\"js-wa\" data-msg=\"Hi! I'm interested in a golf cart tour to the Catacombs and Appian Way. Date: … People: …\">Ask about this tour</a>", '<a href="/catacombs-appian-way-golf-cart-tour/">Read the catacombs guide</a>')
@@ -262,11 +291,13 @@ shutil.copy(os.path.join(ROOT, "src", "templates", "privacy.html"), os.path.join
 
 import tourpages, intl
 TOUR_URLS = tourpages.build(head, NAV, footer, U, SITE, write)
-INTL_URLS, GROUPS = intl.build(dict(head=head, U=U, SITE=SITE, write=write, CART=CART, WA_ICON=WA_ICON))
+INTL_URLS, GROUPS = intl.build(dict(head=head, U=U, SITE=SITE, write=write, CART=CART, WA_ICON=WA_ICON, SEASON=SEASON))
 # sitemap
+LASTMOD = {f'/{p["slug"]}/': p["modified"] for p in PAGES if "modified" in p}
+LASTMOD.update(intl.LASTMOD)
 urls = ["/"] + [f'/{p["slug"]}/' for p in PAGES] + TOUR_URLS + INTL_URLS + ["/about/"]
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
-    f"  <url><loc>{SITE}{u}</loc><lastmod>{UPDATED_ISO}</lastmod></url>\n" for u in urls) + "</urlset>\n"
+    f"  <url><loc>{SITE}{u}</loc><lastmod>{LASTMOD.get(u, UPDATED_ISO)}</lastmod></url>\n" for u in urls) + "</urlset>\n"
 write("sitemap.xml", sm)
 
 write("robots.txt", f"""User-agent: *
@@ -357,3 +388,14 @@ for _root, _, _files in os.walk(OUT):
             if "consent.js" not in _h:
                 _h = _h.replace("</body>", _tag + "\n</body>", 1)
                 open(_p, "w").write(_h)
+
+# ---- seasonal strip on the guides most related to Christmas ----
+if SEASON_ON:
+    for _lang, _paths in {"en": ["best-golf-cart-tours-rome", "rome-night-golf-cart-tour", "golf-cart-tour-rome-price"],
+                          "es": ["es/mejores-tours-carrito-golf-roma", "es/roma-de-noche-carrito-golf", "es/precio-tour-carrito-golf-roma"],
+                          "de": ["de/beste-golfcart-touren-rom", "de/rom-bei-nacht-golfcart", "de/golfcart-tour-rom-preise"]}.items():
+        for _p in _paths:
+            _f = os.path.join(OUT, _p, "index.html"); _h = open(_f).read()
+            if 'class="season"' not in _h:
+                _h = _h.replace('<section class="section">', SEASON[_lang] + '\n<section class="section">', 1)
+                open(_f, "w").write(_h)

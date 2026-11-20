@@ -18,6 +18,7 @@ CRUISE = "1598275452245-bd4ee1a97694"
 PAGES = [
 dict(
 slug="best-golf-cart-tours-rome",
+modified="2026-11-20",
 nav="Best tours 2026",
 title="The 8 Best Golf Cart Tours in Rome (2026), Ranked by Category",
 desc="The best golf cart tours in Rome for 2026: best private tour, best value, best for families, best night tour, best catacombs tour and more, with ratings and prices.",
@@ -63,6 +64,7 @@ body="""
 """,
 tours="best",
 faqs=[
+("Is a golf buggy tour the same as a golf cart tour?","Yes. \"Golf buggy\" is the British term for the same small electric vehicle. In Rome the tours are identical: an open cart for 4–7 people with a driver-guide."),
 ("What is the best golf cart tour in Rome?","For most visitors, a private city highlights tour with hotel pickup. The Private Guided City Highlights Tour by Golf Cart is rated 4.9/5 from 250 reviews on GetYourGuide."),
 ("What's the best golf cart tour in Rome for families?","The VIP golf cart tour with Trevi skip-the-line, gelato and supplì: private, 2–2.5 hours, rated 4.8/5 from 858 reviews."),
 ("What's the cheapest good golf cart tour in Rome?","The Biga Tours Rome Express, about 1.5 hours from $69 per person."),
@@ -165,6 +167,7 @@ related=["private-golf-cart-tour-rome","golf-cart-tour-rome-seniors","golf-cart-
 # ------------------------------------------------------------------
 dict(
 slug="golf-cart-tour-rome-price",
+modified="2026-11-20",
 nav="Prices",
 title="How Much Is a Golf Cart Tour in Rome? Prices Compared (2026)",
 desc="Golf cart tour prices in Rome: small group from about $69, private from about $81 per person, full day and cruise excursions. What's included and how to save.",
@@ -212,6 +215,8 @@ body="""
 """,
 tours="cheap",
 faqs=[
+("How much is a golf cart tour in Rome per person?","About $69 per person for a 1.5-hour shared tour, about $100–150 for a classic 3-hour shared tour, and about $81–230 per person on private tours, depending on group size."),
+("How much is a private golf cart tour in Rome?","Roughly $400–800 for the whole cart for 2.5–3 hours, usually with hotel pickup. Per person it gets cheaper the more people share the cart."),
 ("What's the cheapest golf cart tour in Rome?","Shared express tours of about 1.5 hours start from around $69 per person."),
 ("Is a golf cart tour in Rome worth the money?","For most first-time visitors, yes: you see 6–8 major sights in about 3 hours without walking 10+ km, which is especially useful in summer heat or with kids and older travellers."),
 ("Do I need to pay entry tickets?","Not for the standard tour, which stops outside the monuments. Tickets are extra if you want to go inside the Colosseum or museums."),
@@ -222,10 +227,11 @@ related=["private-golf-cart-tour-rome","golf-cart-vs-walking-tour-rome","one-day
 # ------------------------------------------------------------------
 dict(
 slug="rome-night-golf-cart-tour",
+modified="2026-11-20",
 nav="Night tours",
-title="Rome Night Golf Cart Tour: See the City Lit Up (2026)",
-desc="Night golf cart tours in Rome: what you see after dark, best months, how long they last and how to book a private evening tour.",
-h1="Night golf cart tours in Rome",
+title="Rome Golf Cart Tour at Night: Evening Routes & Tips (2026)",
+desc="Evening and night golf cart tours in Rome: the Colosseum, Trevi and Navona lit up, start times, how long they last and how to book a private tour.",
+h1="Rome by night: evening golf cart tours",
 lead="Cooler air, quieter streets and the monuments lit up. Rome after dark is a different city.",
 img=COLOSSEUM_NIGHT, img_alt="The Colosseum lit up at night",
 answer="Night golf cart tours in Rome usually run for about 2 hours, starting around sunset. You see the Colosseum, Trevi Fountain, Piazza Navona and other landmarks lit up, with fewer crowds and cooler temperatures. They're most popular from May to September, and private evening tours can be arranged year-round.",
@@ -257,6 +263,8 @@ body="""
 """,
 tours="night",
 faqs=[
+("Is an evening golf cart tour in Rome worth it?","Yes, if you want to see the main sights lit up without walking: in about 2 hours you pass the Colosseum, Piazza Venezia, Trevi and Navona after dark, when it is cooler and less crowded than in the day."),
+("Do night golf cart tours pick you up at your hotel?","Private night tours usually include pickup at hotels in the historic center. Small-group evening tours tend to start from a meeting point."),
 ("How long is a night golf cart tour in Rome?","Usually about 2 hours, sometimes longer on private tours."),
 ("What time do night tours start?","Typically around sunset: about 8–9pm in summer and 5–6pm in winter."),
 ("Can I combine a night tour with dinner?","Yes. Many guides will drop you at a restaurant in the center at the end, and some food tours run in the evening."),
@@ -780,53 +788,74 @@ related=["golf-cart-vs-walking-tour-rome","best-golf-cart-tours-rome","golf-cart
 # ------------------------------------------------------------------
 dict(
 slug="rome-christmas-lights-tour",
-nav="Christmas lights tour",
-title="Rome Christmas Lights Tour by Golf Cart: Trees, Markets & Lights (2026)",
-desc="See Rome's Christmas lights by golf cart: Via del Corso and Via Condotti lights, the Spanish Steps and Piazza del Popolo trees, St. Peter's nativity and the Piazza Navona market.",
-h1="Rome's Christmas lights by golf cart",
-lead="December evenings in Rome are magical, and cold. A night tour by cart is the easiest way to see the lights.",
+nav="Christmas lights 2026",
+modified="2026-11-20",
+title="Rome Christmas Lights 2026: Dates, Best Spots & Evening Tours",
+desc="Rome Christmas 2026: St. Peter's tree lit on 7 December, Piazza Navona market from early December to 6 January, the best streets for lights and an easy route by golf cart.",
+h1="Rome's Christmas lights 2026: dates, best spots and how to see them",
+lead="The 2026 dates we could confirm, where the lights are, and a simple evening route that covers them without walking for kilometres in the cold.",
 img=COLOSSEUM_NIGHT, img_alt="The Colosseum lit up at night",
-answer="Rome's Christmas lights usually go on around 8 December and stay up until Epiphany on 6 January. A 2–3 hour evening golf cart tour can cover the lights on Via del Corso and Via dei Condotti, the trees at the Spanish Steps and Piazza del Popolo, the Christmas market in Piazza Navona, and the tree and nativity scene in St. Peter's Square.",
+answer="In 2026 the Christmas tree in St. Peter's Square is lit on Monday 7 December at 5:30pm. The Piazza Navona Christmas market can open from 1 December and runs until Epiphany, 6 January 2027. The lights on Via del Corso were installed in early November and are usually switched on in early December. The best spots are Via del Corso, Via dei Condotti and the Spanish Steps, Piazza Venezia, Piazza Navona, St. Peter's Square and Trastevere. A 2–3 hour evening golf cart tour covers most of them.",
 body="""
-<h2>What to see</h2>
+<h2>Christmas 2026 in Rome: the dates</h2>
+<p>Checked on 20 November 2026. Rome rarely announces exact switch-on times far in advance, so we only list what has been published.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>What</th><th>When</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>St. Peter's Square tree lighting</td><td>Mon 7 December 2026, 5:30pm</td><td>Confirmed by the Vatican</td></tr>
+<tr><td>St. Peter's nativity scene</td><td>Being set up in the square</td><td>Unveiling date not yet announced</td></tr>
+<tr><td>Piazza Navona Christmas market</td><td>From early December (not before 1 Dec) to 6 January 2027</td><td>Window confirmed, opening day not yet announced</td></tr>
+<tr><td>Via del Corso lights</td><td>Installed in early November, usually lit in early December</td><td>Switch-on date not announced</td></tr>
+<tr><td>Feast of the Immaculate Conception</td><td>Tue 8 December 2026, public holiday</td><td>Fixed date</td></tr>
+<tr><td>Epiphany, end of the season</td><td>Wed 6 January 2027</td><td>Fixed date</td></tr>
+</tbody>
+</table></div>
+<p>This year's Vatican tree is a 24-metre white fir from the Pollino National Park in southern Italy. It will be lit at the same moment as the giant tree on Monte Ingino in Gubbio.</p>
+
+<h2>Where to see the lights</h2>
 <ul>
-<li><b>Via del Corso:</b> lights stretch along the main shopping street between Piazza Venezia and Piazza del Popolo.</li>
-<li><b>Via dei Condotti and the Spanish Steps:</b> the luxury street leading to the Steps, usually with a big tree at the top.</li>
-<li><b>Piazza del Popolo:</b> in recent years home to the city's main Christmas tree.</li>
-<li><b>Piazza Navona:</b> Rome's traditional Christmas market, with stalls, sweets and a carousel, open until Epiphany.</li>
-<li><b>St. Peter's Square:</b> the Vatican's giant tree and life-size nativity scene, usually lit in early December.</li>
-<li><b>Trastevere:</b> lights strung between the ivy-covered buildings, perfect for dinner afterwards.</li>
+<li><b>Via del Corso:</b> the main shopping street, lit from Piazza Venezia towards Piazza del Popolo. It's pedestrian-heavy in the evening, so see it from the side streets or on foot for a few minutes.</li>
+<li><b>Via dei Condotti and the Spanish Steps:</b> the luxury street and the square below the Steps, usually the most photographed decorations in the city.</li>
+<li><b>Piazza Venezia:</b> where the city's official tree usually stands, in front of the Vittoriano.</li>
+<li><b>Piazza Navona:</b> the traditional Befana market, with stalls, sweets and a carousel, open late into the evening.</li>
+<li><b>St. Peter's Square:</b> the Vatican's tree and nativity scene, lit every evening until the end of the Christmas season.</li>
+<li><b>Trastevere:</b> lights strung across the narrow streets. A good place to end the evening with dinner.</li>
 </ul>
 
-<h2>Key dates</h2>
-<ul>
-<li><b>Around 8 December</b> (Feast of the Immaculate Conception): the city's lights and main trees are usually switched on.</li>
-<li><b>Early December:</b> the St. Peter's Square tree and nativity are usually unveiled.</li>
-<li><b>Until 6 January</b> (Epiphany): lights, markets and decorations stay up.</li>
-</ul>
-<p>Exact dates change every year, so check the city's official announcements closer to the time.</p>
+<h2>A simple evening route</h2>
+<ol>
+<li><b>5:00pm, Piazza Venezia:</b> start just after dark at the city tree.</li>
+<li><b>Via del Corso and Via dei Condotti:</b> the lit shopping streets, then the Spanish Steps.</li>
+<li><b>Trevi Fountain:</b> lit all year and quieter after dark than at midday.</li>
+<li><b>Piazza Navona:</b> stop at the Christmas market.</li>
+<li><b>St. Peter's Square:</b> across the river for the tree and the nativity.</li>
+<li><b>Trastevere:</b> finish with dinner.</li>
+</ol>
+<p>On foot this is around 6–7 km. By golf cart it fits into 2–3 hours, including photo stops.</p>
 
-<h2>Why by golf cart</h2>
+<h2>Why a golf cart works well in December</h2>
 <ul>
-<li>The lights are spread across the center: on foot it's several kilometres in the cold.</li>
-<li>Carts reach the narrow streets where the best lights are.</li>
-<li>Most carts have a roof and some operators provide blankets. Ask when booking.</li>
+<li>The lights are spread across the whole center. A cart links them without the long walk in the cold.</li>
+<li>Carts can reach narrow streets where buses and cars can't go.</li>
+<li>Most carts have a roof, and some operators provide blankets. Ask when you book.</li>
 </ul>
 
-<h2>Tips for a December evening tour</h2>
+<h2>Tips</h2>
 <ul>
-<li>Book a slot starting around <b>5–6pm</b>, just after dark.</li>
-<li>Dress warmly: open-sided carts get cold, and December evenings in Rome are often around 5–10°C.</li>
-<li>Avoid 24–25 December and 31 December unless the operator confirms it's running.</li>
-<li>For a private Christmas lights route, message us and we'll arrange it with a local operator.</li>
+<li>Book a start time around <b>5–6pm</b>, just after sunset (about 4:40pm in December).</li>
+<li>Dress warmly. December evenings in Rome are often around 5–10°C and carts are open at the sides.</li>
+<li>7 and 8 December and the weekends before Christmas are the busiest evenings. Book a few days ahead.</li>
+<li>On 24, 25 and 31 December, check that the operator is running before you plan around it.</li>
+<li>For a private route built around the lights, write to us on WhatsApp and we'll arrange it with a local operator.</li>
 </ul>
 """,
 tours="night", tours_title="Evening and night tours",
 faqs=[
-("When are the Christmas lights on in Rome?","Usually from around 8 December until Epiphany on 6 January."),
-("Where are the best Christmas lights in Rome?","Via del Corso, Via dei Condotti and the Spanish Steps, Piazza del Popolo, Piazza Navona's Christmas market and St. Peter's Square."),
-("Is there a Christmas market in Rome?","Yes, the traditional market in Piazza Navona, usually open until 6 January."),
-("Is a golf cart tour good in December?","Yes, if you dress warmly. Evening tours are the best way to see the lights without walking several kilometres in the cold."),
+("When are the Christmas lights switched on in Rome in 2026?","The St. Peter's Square tree is lit on 7 December 2026 at 5:30pm. The Via del Corso lights were installed in early November; the city usually switches the lights on in early December and keeps them up until Epiphany on 6 January."),
+("When does the Piazza Navona Christmas market open in 2026?","It can open from 1 December 2026 and closes on 6 January 2027. The exact opening day is usually announced in late November (it opened on 6 December in 2025 and 8 December in 2024)."),
+("Where are the best Christmas lights in Rome?","Via del Corso, Via dei Condotti and the Spanish Steps, Piazza Venezia, Piazza Navona, St. Peter's Square and Trastevere."),
+("Where does the 2026 Vatican Christmas tree come from?","It's a 24-metre white fir from the Pollino National Park, a gift from the town of Terranova di Pollino."),
+("Is a golf cart tour a good idea in December?","Yes, if you dress warmly. An evening tour links the lights in 2–3 hours, instead of 6–7 km on foot in the cold."),
 ],
 related=["rome-night-golf-cart-tour","rome-golf-cart-food-tour","best-golf-cart-tours-rome","one-day-in-rome-by-golf-cart"],
 ),
