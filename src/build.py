@@ -4,7 +4,7 @@ from pages import PAGES, ABOUT, U
 
 SITE = "https://romegolfcartguide.com"
 # Google Analytics 4 Measurement ID (G-XXXXXXXXXX). Empty = no cookie banner and no analytics.
-GA_ID = ""
+GA_ID = "G-3G5VQ96CPJ"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site")
 UPDATED = "October 2026"

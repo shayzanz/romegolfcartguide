@@ -18,7 +18,7 @@ Le voci più recenti stanno in cima.
   - testi in EN/ES/DE;
   - link "Cookie settings" nel footer di ogni pagina;
   - eventi `affiliate_click`, `whatsapp_click`, `tour_details_click`, `finder_search`.
-  - Il GA_ID va impostato in `src/build.py`: finché è vuoto, il sito non mostra banner e non carica GA.
+  - GA4 attivo con ID `G-3G5VQ96CPJ` (impostato in `src/build.py`). Testato su EN/ES/DE, privacy e schede tour: nessuna richiesta a Google prima di "Accetta".
 - Aggiornata la privacy: sezione su Google Analytics, base giuridica (consenso), conservazione 14 mesi, elenco dei cookie.
 - Scritto l'audit iniziale (`seo/audit-2026-11-20.md`) con il piano di crescita.
 

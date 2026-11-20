@@ -1,7 +1,7 @@
 /* Cookie consent + Google Analytics 4 (loaded only after "Accept").
    Set GA_ID to the Measurement ID (G-XXXXXXXXXX). Empty = no banner, no analytics. */
 (function () {
-  var GA_ID = '';
+  var GA_ID = 'G-3G5VQ96CPJ';
   var KEY = 'rgcg_consent';          // stores {v:'granted'|'denied', t:timestamp}
   var MAX_AGE = 1000 * 60 * 60 * 24 * 180; // ask again after 6 months
   if (!GA_ID) return;
