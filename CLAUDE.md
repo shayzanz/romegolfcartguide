@@ -41,6 +41,8 @@ Claude è il responsabile della crescita SEO + GEO/AEO (traffico da Google e dal
 ## Dati e strumenti
 - Search Console: proprietà `sc-domain:romegolfcartguide.com`, letta tramite Windsor.ai (connettore `searchconsole`).
 - GA4: via Windsor.ai (connettore `googleanalytics4`). Eventi: `affiliate_click` (partner, tour_id, page_path), `whatsapp_click`, `tour_details_click`, `finder_search`. Il banner cookie raccoglie i dati solo dopo "Accetta", quindi GA vede solo una parte delle visite. I clic dentro il widget GYG (iframe) non sono tracciati.
+- Bing Webmaster via Windsor (connettore `bing_webmaster`, account `https://romegolfcartguide.com/`): utile per la parte GEO, perché ChatGPT e Copilot usano l'indice di Bing.
+- Pinterest via Windsor (connettore `pinterest_organic`, account `bestplacesitaly5`): solo lettura delle statistiche, non pubblica.
 - Ahrefs e Ubersuggest: piani gratuiti, dati limitati.
 - Le conversioni reali sono nelle dashboard Viator e GetYourGuide: chiedere a Shay gli export quando servono.
 
@@ -61,6 +63,13 @@ Shay scrive GO circa ogni 1–2 giorni. A ogni GO, nell'ordine:
 4. **Verifica e pubblicazione**: build, controlli, commit e push su `main` (Netlify pubblica da solo), ping IndexNow.
 5. **Log**: aggiorna `seo-log.md`.
 6. **Report a Shay** in italiano semplice, 5–10 righe: cosa è cambiato nei dati, cosa ho fatto, cosa gli chiedo (solo se serve un suo ok per azioni esterne, con il testo esatto pronto da approvare).
+
+## Pinterest
+- Account `bestplacesitaly5` (nome "Best Places Italy"), bacheca "Rome Travel Tips".
+- Il 9 novembre 2026 Shay ha caricato 10 pin (1000×1500) programmati uno al giorno.
+- Le immagini si generano con Playwright: font Bricolage Grotesque e Figtree, colori blu `#1f4fd1` e giallo `#ffcb3d`, illustrazioni SVG. Niente foto di persone, niente marchi altrui.
+- Al primo GO dopo il 27 novembre 2026, e poi quando le statistiche lo suggeriscono, Claude dice a Shay che è il momento di nuovi pin. Prepara le immagini PNG (inviate una per una, non in zip), con titolo, descrizione e link, e gli spiega passo passo come caricarli e programmarli.
+- Shay li carica a mano: Claude non pubblica su Pinterest.
 
 ## Registro
 Ogni sessione GO aggiunge una voce in cima a `seo-log.md`:
