@@ -1,0 +1,15 @@
+# Netlify reads this file from the repo root. The site is pre-built into /site by src/build.py.
+[build]
+  publish = "site"
+  command = ""
+
+[[redirects]]
+  from = "https://www.romegolfcartguide.com/*"
+  to = "https://romegolfcartguide.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
