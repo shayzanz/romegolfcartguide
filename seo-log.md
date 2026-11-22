@@ -2,6 +2,37 @@
 
 Le voci più recenti stanno in cima.
 
+## 2026-11-22: GO #2, sito bloccato su Netlify, pagina anziani
+**Dati visti:**
+- Search Console, ultimi 7 giorni:
+  - prezzi: pos. 8.8 (era 12), 20 impressioni;
+  - guida notturna: pos. 10.7 (era 15.5);
+  - Natale DE pos. 7.3, Natale ES pos. 11.7;
+  - best: 72 impressioni a pos. 30, 1 clic;
+  - home: pos. 7.8, 1 clic;
+  - anziani: pos. 51, la query "rome tours for seniors with limited mobility" continua a mostrarsi.
+- GA4: 0 eventi e 0 sessioni dal 20 al 22/11. GA è online (consent.js live con ID), quindi visite poche e/o consenso non dato.
+- Bing: ancora vuoto.
+
+**Problema trovato:** i deploy Netlify di 9676bed (GO #1) ed e296b64 risultano **"Skipped"**: il GO #1 non è mai andato online. È coerente con il blocco dei deploy di produzione per i crediti del piano Free di Netlify, segnalato da molti utenti sul forum. Il sito resta online con la versione 7061492.
+- Proposta a Shay: spostare l'hosting su **Cloudflare Pages** (gratis, deploy da GitHub senza limiti di crediti). Aggiunto `site/_headers`, che funziona su entrambi gli host.
+- **Serve l'ok di Shay** (azione su piattaforme esterne: Cloudflare, Namecheap, DNS).
+
+**Fatto:**
+1. **/golf-cart-tour-rome-seniors/ riscritta e ampliata** (da circa 300 a circa 900 parole), per coprire la domanda più ampia "rome tours for seniors with limited mobility":
+   - golf cart privato;
+   - accessibilità di Colosseo e Musei Vaticani, con fatti dalle pagine ufficiali verificati il 22/11 (ascensore tra primo e secondo ordine; sedie a rotelle gratuite ai Vaticani; ingresso gratuito con invalidità ≥67%);
+   - piano di una giornata e alternative;
+   - 6 FAQ.
+   - Title e H1 più ampi; lo slug resta lo stesso.
+2. `site/_headers` per la cache degli asset, indipendente dall'host.
+
+**URL toccati:** /golf-cart-tour-rome-seniors/
+
+**Da misurare:**
+- quando il sito tornerà a pubblicare: posizione della pagina anziani sulla query "limited mobility" e tutte le metriche del GO #1;
+- IndexNow da inviare dopo il primo deploy riuscito, tramite il browser dell'app dall'origine del sito.
+
 ## 2026-11-20: GO #1, Natale, quick win, schede tour
 **Dati visti:**
 - Search Console ultimi 7 giorni: 37 righe query/pagina, pochi clic. Le pagine Natale ES/DE sono in posizione 6–9 ("luces navidad roma", "Weihnachtsbeleuchtung Rom"). La guida notturna è ferma a pos. 12–13 per "rome golf cart tour at night" e varianti "evening". "biga tours" è a pos. 20 sulla pagina best e a 29 sulla scheda.

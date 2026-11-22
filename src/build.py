@@ -399,3 +399,8 @@ if SEASON_ON:
             if 'class="season"' not in _h:
                 _h = _h.replace('<section class="section">', SEASON[_lang] + '\n<section class="section">', 1)
                 open(_f, "w").write(_h)
+
+# ---- host-agnostic headers (Cloudflare Pages and Netlify both read /_headers) ----
+write("_headers", """/assets/*
+  Cache-Control: public, max-age=3600, must-revalidate
+""")
