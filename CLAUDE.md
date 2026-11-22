@@ -9,14 +9,20 @@ Claude è il responsabile della crescita SEO + GEO/AEO (traffico da Google e dal
 ## Regole di lavoro
 - **Si lavora solo quando Shay scrive GO.** Niente giri automatici o task programmati.
 - Con il GO: analizza i dati, sistema titoli, meta, testi, link interni, schema e FAQ, crea contenuti nuovi dove c'è domanda, pubblica (commit + push su `main`) e aggiorna `seo-log.md`.
-- **Niente post sui social e nessuna azione su piattaforme esterne** (Reddit, Quora, Pinterest, Google Search Console, GA4, Netlify, GitHub settings…) senza l'ok di Shay sulla modifica precisa. Leggere i dati va bene.
+- **Niente post sui social e nessuna azione su piattaforme esterne** (Reddit, Quora, Pinterest, Google Search Console, GA4, Cloudflare, Namecheap, GitHub settings…) senza l'ok di Shay sulla modifica precisa. Leggere i dati va bene.
 - Niente installazioni sul computer di Shay.
 - Testi con tono umano: frasi semplici e concrete, niente formule da AI ("in today's fast-paced world", "nestled", "unlock", "elevate", "seamless", "hidden gem", "whether you're… or…").
 - Mai inventare: recensioni, testimonianze, persone, esperienze in prima persona, prezzi o rating non verificati. Rating e prezzi solo da Viator/GYG verificati, con la data del controllo.
 - Non copiare testi o foto dei concorrenti.
 
 ## Come è fatto il sito
-- `site/`: il sito pubblicato (Netlify pubblica questa cartella, vedi `netlify.toml` nella root). Non c'è build su Netlify: si genera in locale e si committa `site/`.
+- **Hosting: Cloudflare Workers (static assets)** dal 22/11/2026. Netlify è stato abbandonato perché il piano Free saltava i deploy ("Skipped" per i crediti).
+  - Ogni push su `main` viene pubblicato da Cloudflare Workers Builds (progetto `romegolfcartguide`, URL di prova `romegolfcartguide.shayzanz.workers.dev`).
+  - Config: `wrangler.jsonc` (assets da `./site`, `worker/index.js` fa solo il redirect 301 da www al dominio senza www).
+  - DNS su Cloudflare: Namecheap punta ai nameserver Cloudflare. Il TXT `google-site-verification` serve a Search Console: non toccarlo.
+  - www: record A `192.0.2.1` proxied + route `www.romegolfcartguide.com/*` sul worker.
+  - `netlify.toml` è rimasto solo per storico.
+- `site/`: il sito pubblicato. Non c'è build lato host: si genera in locale con build.py e si committa `site/`. Cache degli asset in `site/_headers`.
 - `src/build.py`: genera tutto il sito. Si lancia con `python3 src/build.py` dalla root del repo (serve node per `tourpages.py`).
   - `src/pages.py`: guide in inglese (slug, title, desc, h1, body HTML, faqs, tours, related, immagini Unsplash per ID).
   - `src/pages_es.py`, `src/pages_de.py`: guide in spagnolo e tedesco (campo `en` = slug inglese corrispondente, serve per hreflang).
@@ -60,7 +66,7 @@ Shay scrive GO circa ogni 1–2 giorni. A ogni GO, nell'ordine:
    - pagine che portano clic affiliati.
 3. **Lavoro**: modifiche al sito o contenuti nuovi.
    - Non riscrivere la stessa pagina più di una volta ogni 10–14 giorni: Google ha bisogno di tempo per rivalutarla. Annota nel log quando una pagina è stata toccata.
-4. **Verifica e pubblicazione**: build, controlli, commit e push su `main` (Netlify pubblica da solo), ping IndexNow.
+4. **Verifica e pubblicazione**: build, controlli, commit e push su `main` (Cloudflare pubblica da solo in circa 1 minuto; verifica su workers.dev), ping IndexNow. Dal workspace api.indexnow.org non è raggiungibile: usa il browser dell'app con richieste GET `?url=...&key=...` in modalità no-cors.
 5. **Log**: aggiorna `seo-log.md`.
 6. **Report a Shay** in italiano semplice, 5–10 righe: cosa è cambiato nei dati, cosa ho fatto, cosa gli chiedo (solo se serve un suo ok per azioni esterne, con il testo esatto pronto da approvare).
 

@@ -29,6 +29,11 @@ Le voci più recenti stanno in cima.
 
 **URL toccati:** /golf-cart-tour-rome-seniors/
 
+**Aggiornamento 22/11, pomeriggio:**
+- Hosting spostato su **Cloudflare Workers**, con Shay passo passo: nameserver da Netlify a Cloudflare, TXT di Google conservato, custom domain sul dominio principale, route + redirect per il www.
+- GO #1 e GO #2 ora sono online.
+- IndexNow inviato per 22 URL toccati, tramite il browser dell'app.
+
 **Da misurare:**
 - quando il sito tornerà a pubblicare: posizione della pagina anziani sulla query "limited mobility" e tutte le metriche del GO #1;
 - IndexNow da inviare dopo il primo deploy riuscito, tramite il browser dell'app dall'origine del sito.
