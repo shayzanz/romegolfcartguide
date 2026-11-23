@@ -908,7 +908,7 @@ body="""
 <thead><tr><th>Tour</th><th>Length</th><th>From</th><th>Main stops</th><th>Included</th></tr></thead>
 <tbody>
 <tr><td><b>Rome Express</b></td><td>About 1.5 h</td><td>About $71</td><td>Pantheon, Trevi, Piazza Venezia, Colosseum (outside), Circus Maximus, Mouth of Truth, Piazza Navona</td><td>Guide-driver, headsets</td></tr>
-<tr><td><b>City Highlights</b></td><td>About 2.5 h</td><td>About $104</td><td>Pantheon, Trevi, Spanish Steps, Piazza del Popolo, Piazza Navona, Piazza Venezia, Colosseum (outside)</td><td>Guide-driver, headsets, one gelato and water</td></tr>
+<tr><td><b>City Highlights</b><br><small>Rated 4.9/5 from 1,565 reviews on Viator</small></td><td>About 2.5 h</td><td>About $104</td><td>Pantheon, Trevi, Spanish Steps, Piazza del Popolo, Piazza Navona, Piazza Venezia, Colosseum (outside)</td><td>Guide-driver, headsets, one gelato and water</td></tr>
 <tr><td><b>Catacombs &amp; Appian Way</b></td><td>About 2.5 h</td><td>About $108</td><td>Circus Maximus, Baths of Caracalla, Appian Way, a catacomb visit (30–35 min), Aurelian Walls, Pyramid of Cestius</td><td>Guide-driver, headsets, catacomb ticket and guided visit, water</td></tr>
 </tbody>
 </table></div>
@@ -934,7 +934,7 @@ body="""
 </ul>
 
 <h2>Book a Biga Tours golf cart tour</h2>
-<p>Two of the tours are on Viator, with free cancellation on most dates:</p>
+<p>Two of the tours are on Viator, with free cancellation. City Highlights is rated 4.9 out of 5 from 1,565 reviews there (checked on 23 November 2026).</p>
 <p style="display:flex;gap:10px;flex-wrap:wrap">""" + VI("tours/Rome/Golf-Cart-Driving-Tour-Rome-Express/d511-387632P6", "biga-express", "Rome Express (1.5 h): see dates") + VI("tours/Rome/Golf-Cart-Small-Group-Guided-Tour-Rome-City-Highlights/d511-387632P2", "biga-highlights", "City Highlights (2.5 h): see dates", "btn btn-line") + """</p>
 <p>For the Appian Way and catacombs, compare Biga's tour with the private options in our <a href="/catacombs-appian-way-golf-cart-tour/">Appian Way and catacombs guide</a>.</p>
 """,
