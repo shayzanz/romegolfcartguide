@@ -2,6 +2,38 @@
 
 Le voci più recenti stanno in cima.
 
+## 2026-11-23: GO #3, quiz "Find your tour" e pagina Biga Tours
+**Dati visti:**
+- Search Console, ultimi 7 giorni:
+  - "biga tours": 13 impressioni (pos. 19 sulla best, 29 sulla scheda); "golf buggy tour rome": pos. 25;
+  - "best golf cart tour rome": pos. 3 (1 impressione);
+  - "golf car roma tour": pos. 10;
+  - Natale ES pos. 9;
+  - anziani pos. 66, appena riscritta.
+- GA4: ancora 0 eventi.
+- Hosting Cloudflare: OK.
+
+**Fatto:**
+1. **Nuova pagina /biga-tours-rome-golf-cart/**, perché c'è domanda reale sul nome dell'operatore.
+   - Contenuto: 3 tour di Biga (Express, City Highlights, Catacombs & Appian Way) con prezzi, durate, tappe e incluso, verificati il 23/11 sulle loro pagine di prenotazione; regole su bambini, gruppo, puntualità; quando scegliere un'alternativa; 6 FAQ.
+   - Disclaimer: non affiliati a Biga Tours.
+   - Pulsanti Viator: Express (`387632P6`) e City Highlights (`387632P2`). **Da verificare** che il link P2 apra il prodotto giusto: Viator dà 403 al browser automatico.
+   - La scheda /tour/biga-express/ ora linka questa pagina.
+2. **Quiz "Find your tour in 3 questions"** su tutte le pagine con i tour, in EN/ES/DE.
+   - Pulsante discreto dopo il 40% di scroll, mai automatico.
+   - Risultati da tours.js; link con campagna `-q`; eventi GA4 dedicati.
+   - Testato con Playwright: desktop e mobile, 3 lingue, eventi corretti.
+3. consent.js:
+   - espone `window.rgcgTrack` e aggiunge il parametro `source` agli eventi di clic;
+   - `?v=20261123`.
+
+**URL toccati:** /biga-tours-rome-golf-cart/ (nuova), /tour/biga-express/, tutte le pagine (script quiz).
+
+**Da misurare:**
+- impressioni e posizione di /biga-tours-rome-golf-cart/ su "biga tours";
+- eventi `quiz_open` / `quiz_complete` e clic con `source=quiz`;
+- campagne `rgcg-*-q` nelle dashboard affiliati.
+
 ## 2026-11-22: GO #2, sito bloccato su Netlify, pagina anziani
 **Dati visti:**
 - Search Console, ultimi 7 giorni:

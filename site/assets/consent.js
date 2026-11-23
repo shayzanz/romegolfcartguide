@@ -48,6 +48,7 @@
 
   // ---- conversion events (sent only when consent was given) ----
   function track(name, params) { if (loaded && window.gtag) gtag('event', name, params); }
+  window.rgcgTrack = track; // used by quiz.js
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a');
     if (!a) return;
@@ -57,13 +58,14 @@
       var m = href.match(/[?&](?:campaign|cmp)=rgcg-([^&]+)/);
       track('affiliate_click', {
         partner: /viator/.test(href) ? 'viator' : 'getyourguide',
-        tour_id: m ? decodeURIComponent(m[1]) : '',
+        tour_id: m ? decodeURIComponent(m[1]).replace(/-q$/, '') : '',
+        source: a.dataset.src || 'page',
         link_text: (a.textContent || '').trim().slice(0, 60),
         page_path: where,
         transport_type: 'beacon'
       });
     } else if (a.classList.contains('js-wa') || /wa\.me|whatsapp/.test(href)) {
-      track('whatsapp_click', { page_path: where, transport_type: 'beacon' });
+      track('whatsapp_click', { page_path: where, source: a.dataset.src || 'page', transport_type: 'beacon' });
     } else if (a.matches('[href*="/tour/"]')) {
       track('tour_details_click', { tour_path: a.getAttribute('href'), page_path: where });
     }

@@ -23,6 +23,7 @@ OPERATORS = {"Biga Tours", "Rolling Rome", "IterItaly"}
 
 def guide_for(t):
     """The guide that best matches a tour, with a descriptive anchor."""
+    if t.get("by") == "Biga Tours": return "/biga-tours-rome-golf-cart/", "all Biga Tours golf cart tours compared"
     if t.get("catacombs"): return "/catacombs-appian-way-golf-cart-tour/", "Appian Way and catacombs golf cart tours compared"
     if t.get("cruise") or t["id"] == "cruise": return "/civitavecchia-cruise-golf-cart-tour-rome/", "golf cart tours from Civitavecchia cruise port"
     if t.get("night") and t["id"] != "custom": return "/rome-night-golf-cart-tour/", "evening and night golf cart tours in Rome"

@@ -70,14 +70,13 @@ Shay scrive GO circa ogni 1–2 giorni. A ogni GO, nell'ordine:
 5. **Log**: aggiorna `seo-log.md`.
 6. **Report a Shay** in italiano semplice, 5–10 righe: cosa è cambiato nei dati, cosa ho fatto, cosa gli chiedo (solo se serve un suo ok per azioni esterne, con il testo esatto pronto da approvare).
 
-## Da fare al prossimo GO (approvato da Shay il 22/11)
-- **Quiz "Find your tour in 3 questions"**, con queste specifiche:
-  - pulsantino discreto in basso che compare dopo circa metà scroll; il quiz si apre solo al clic, mai in automatico (niente interstitial: penalità Google su mobile, e c'è già il banner cookie);
-  - 3 domande: persone; interesse (classico / cibo / notte / catacombe); pickup in hotel o difficoltà a camminare;
-  - risultato: 2–3 tour dai dati di `tours.js`, stessa logica del finder in home, con link affiliati;
-  - lingue EN/ES/DE;
-  - eventi GA4 `quiz_open`, `quiz_complete`; `affiliate_click` con parametro `source=quiz`.
-- Pagine nuove dove c'è domanda: "Biga Tours", "golf buggy".
+## Quiz "Find your tour" (dal 23/11/2026)
+- File: `site/assets/quiz.js`, caricato da build.py su tutte le pagine che usano tours.js.
+- Pulsante in basso a sinistra dopo il 40% di scroll, nascosto finché c'è il banner cookie; si apre solo al clic.
+- 3 domande (persone, interesse, esigenza); mostra fino a 3 tour da `TOURS`, filtrati e ordinati per rank.
+- Link affiliati con campagna `rgcg-<id>-q`, così le prenotazioni da quiz si distinguono nelle dashboard Viator/GYG.
+- Eventi GA4: `quiz_open`, `quiz_complete` (people, interest, need, results), `affiliate_click`/`whatsapp_click` con `source=quiz`.
+- Idee in sospeso: pagina o sezione "golf buggy" (oggi pos. ~25 sulla pagina best; aggiungere una sezione alla best dopo il 2/12 per la regola dei 10–14 giorni).
 
 ## Pinterest
 - Account `bestplacesitaly5` (nome "Best Places Italy"), bacheca "Rome Travel Tips".

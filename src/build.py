@@ -380,13 +380,15 @@ _cj = os.path.join(OUT, "assets", "consent.js")
 _c = open(_cj).read()
 _c = re.sub(r"var GA_ID = '[^']*';", f"var GA_ID = '{GA_ID}';", _c, count=1)
 open(_cj, "w").write(_c)
-_tag = '<script src="/assets/consent.js?v=20261120" defer></script>'
+_tag = '<script src="/assets/consent.js?v=20261123" defer></script>'
 for _root, _, _files in os.walk(OUT):
     for _f in _files:
         if _f.endswith(".html"):
             _p = os.path.join(_root, _f); _h = open(_p).read()
             if "consent.js" not in _h:
                 _h = _h.replace("</body>", _tag + "\n</body>", 1)
+            if "tours.js" in _h and "quiz.js" not in _h:
+                _h = _h.replace("</body>", '<script src="/assets/quiz.js?v=20261123" defer></script>\n</body>', 1)
                 open(_p, "w").write(_h)
 
 # ---- seasonal strip on the guides most related to Christmas ----

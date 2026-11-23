@@ -884,3 +884,69 @@ faqs=[
 related=["rome-night-golf-cart-tour","rome-golf-cart-food-tour","best-golf-cart-tours-rome","one-day-in-rome-by-golf-cart"],
 ),
 ]
+
+def VI(path, cid, text, cls="btn"):
+    return (f'<a class="{cls}" href="https://www.viator.com/{path}?pid=P00328677&mcid=42383&medium=link&campaign=rgcg-{cid}" '
+            f'target="_blank" rel="sponsored nofollow noopener">{text}</a>')
+
+PAGES += [
+dict(
+slug="biga-tours-rome-golf-cart",
+modified="2026-11-23",
+nav="Biga Tours compared",
+title="Biga Tours Rome: Golf Cart Tours, Prices & How They Compare (2026)",
+desc="Biga Tours runs small-group golf cart tours from an office by the Pantheon: Express (1.5 h), City Highlights (2.5 h) and Catacombs & Appian Way. Prices, stops, what's included and alternatives.",
+h1="Biga Tours in Rome: their golf cart tours, prices and alternatives",
+lead="Biga Tours is one of the best-known golf cart operators in Rome. Here is what each of their tours includes, what it costs, and when another option fits better.",
+img="1570054623147-dbccfd1efa98", img_alt="The Pantheon in Rome, near the Biga Tours meeting point",
+answer="Biga Tours runs shared golf cart tours that start from its office by the Pantheon. The Rome Express tour lasts about 1.5 hours and costs from about $71. City Highlights lasts about 2.5 hours and costs from about $104, gelato included. The Catacombs & Appian Way tour lasts about 2.5 hours and costs from about $108, with the catacomb entry included. Carts have 7 seats, with at most 14 people per tour, and headsets are provided. Hotel pickup is not included. If you want pickup or a cart only for your group, a private tour is the better fit.",
+body="""
+<p class="disclose" style="margin-top:0">We're not affiliated with Biga Tours. Details are taken from the tours' booking pages and were checked on 23 November 2026. Prices change with dates and currency, so check the final price when you book. If you book through our links we may earn a commission, at no extra cost to you.</p>
+
+<h2>Biga Tours' golf cart tours at a glance</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Tour</th><th>Length</th><th>From</th><th>Main stops</th><th>Included</th></tr></thead>
+<tbody>
+<tr><td><b>Rome Express</b></td><td>About 1.5 h</td><td>About $71</td><td>Pantheon, Trevi, Piazza Venezia, Colosseum (outside), Circus Maximus, Mouth of Truth, Piazza Navona</td><td>Guide-driver, headsets</td></tr>
+<tr><td><b>City Highlights</b></td><td>About 2.5 h</td><td>About $104</td><td>Pantheon, Trevi, Spanish Steps, Piazza del Popolo, Piazza Navona, Piazza Venezia, Colosseum (outside)</td><td>Guide-driver, headsets, one gelato and water</td></tr>
+<tr><td><b>Catacombs &amp; Appian Way</b></td><td>About 2.5 h</td><td>About $108</td><td>Circus Maximus, Baths of Caracalla, Appian Way, a catacomb visit (30–35 min), Aurelian Walls, Pyramid of Cestius</td><td>Guide-driver, headsets, catacomb ticket and guided visit, water</td></tr>
+</tbody>
+</table></div>
+
+<h2>How the tours work</h2>
+<ul>
+<li><b>Meeting point:</b> the Biga Tours office near the Pantheon. The Express tour ends at Piazza Navona.</li>
+<li><b>Group size:</b> electric carts with 7 seats, up to 2 carts and 14 people per tour. The carts drive together and you hear the guide through headsets, so your group may be split between carts.</li>
+<li><b>Language:</b> English-speaking guide.</li>
+<li><b>Children:</b> ages 2–12 are welcome, with free car seats or boosters if you give the children's ages when booking. Babies under 2 can't join.</li>
+<li><b>Be on time:</b> the tour doesn't wait for late arrivals.</li>
+<li><b>Not included:</b> hotel pickup, tips, extra food and drinks, and entry to monuments (except the catacomb on the Appian Way tour).</li>
+</ul>
+
+<h2>Is Biga Tours a good choice?</h2>
+<p><b>A good fit if</b> you're staying near the center, you're happy to share a cart, and you want a good price. The Express tour is one of the cheapest ways to see the main sights by golf cart. City Highlights covers more ground, including the Spanish Steps and Piazza del Popolo, and adds a gelato stop.</p>
+<p><b>Look at other options if:</b></p>
+<ul>
+<li>You need <b>hotel pickup</b>, for example with older travellers or small children. See <a href="/golf-cart-tour-rome-hotel-pickup/">golf cart tours with hotel pickup</a>.</li>
+<li>You want a <b>cart just for your group</b> and your own pace. See <a href="/private-golf-cart-tour-rome/">private golf cart tours compared</a>.</li>
+<li>You're travelling with a <b>baby under 2</b>. Some private operators accept infants, so ask when you book.</li>
+<li>You want to see Rome <b>after dark</b>. See <a href="/rome-night-golf-cart-tour/">evening golf cart tours</a>.</li>
+</ul>
+
+<h2>Book a Biga Tours golf cart tour</h2>
+<p>Two of the tours are on Viator, with free cancellation on most dates:</p>
+<p style="display:flex;gap:10px;flex-wrap:wrap">""" + VI("tours/Rome/Golf-Cart-Driving-Tour-Rome-Express/d511-387632P6", "biga-express", "Rome Express (1.5 h): see dates") + VI("tours/Rome/Golf-Cart-Small-Group-Guided-Tour-Rome-City-Highlights/d511-387632P2", "biga-highlights", "City Highlights (2.5 h): see dates", "btn btn-line") + """</p>
+<p>For the Appian Way and catacombs, compare Biga's tour with the private options in our <a href="/catacombs-appian-way-golf-cart-tour/">Appian Way and catacombs guide</a>.</p>
+""",
+tours="best", tours_title="Other golf cart tours to compare",
+faqs=[
+("Where does the Biga Tours golf cart tour start?","At the Biga Tours office near the Pantheon in central Rome. The Express tour finishes at Piazza Navona."),
+("How much does a Biga Tours golf cart tour cost?","On 23 November 2026, prices started at about $71 for the 1.5-hour Express, $104 for the 2.5-hour City Highlights and $108 for the Catacombs & Appian Way tour. Prices vary by date."),
+("Does Biga Tours pick you up from your hotel?","No. Hotel pickup is not included: the tours start from their office near the Pantheon."),
+("How many people are on a Biga Tours golf cart?","Each cart has 7 seats, and a tour runs with up to 2 carts and 14 people. You hear the guide through headsets."),
+("Can children join Biga Tours golf cart tours?","Yes, from age 2. Free car seats or boosters are provided for ages 2–12 if you give the ages when booking. Babies under 2 can't join."),
+("Is the catacomb entry included in the Biga Appian Way tour?","Yes. The ticket and a 30–35 minute guided visit of the catacomb are included."),
+],
+related=["best-golf-cart-tours-rome","golf-cart-tour-rome-price","private-golf-cart-tour-rome","catacombs-appian-way-golf-cart-tour"],
+),
+]
