@@ -813,7 +813,7 @@ related=["golf-cart-vs-walking-tour-rome","best-golf-cart-tours-rome","golf-cart
 dict(
 slug="rome-christmas-lights-tour",
 nav="Christmas lights 2026",
-modified="2026-11-20",
+modified="2026-11-24",
 title="Rome Christmas Lights 2026: Dates, Best Spots & Evening Tours",
 desc="Rome Christmas 2026: St. Peter's tree lit on 7 December, Piazza Navona market from early December to 6 January, the best streets for lights and an easy route by golf cart.",
 h1="Rome's Christmas lights 2026: dates, best spots and how to see them",
@@ -822,14 +822,14 @@ img=COLOSSEUM_NIGHT, img_alt="The Colosseum lit up at night",
 answer="In 2026 the Christmas tree in St. Peter's Square is lit on Monday 7 December at 5:30pm. The Piazza Navona Christmas market can open from 1 December and runs until Epiphany, 6 January 2027. The lights on Via del Corso were installed in early November and are usually switched on in early December. The best spots are Via del Corso, Via dei Condotti and the Spanish Steps, Piazza Venezia, Piazza Navona, St. Peter's Square and Trastevere. A 2–3 hour evening golf cart tour covers most of them.",
 body="""
 <h2>Christmas 2026 in Rome: the dates</h2>
-<p>Checked on 20 November 2026. Rome rarely announces exact switch-on times far in advance, so we only list what has been published.</p>
+<p>Checked on 24 November 2026. Rome rarely announces exact switch-on times far in advance, so we only list what has been published.</p>
 <div class="tablewrap"><table>
 <thead><tr><th>What</th><th>When</th><th>Status</th></tr></thead>
 <tbody>
 <tr><td>St. Peter's Square tree lighting</td><td>Mon 7 December 2026, 5:30pm</td><td>Confirmed by the Vatican</td></tr>
 <tr><td>St. Peter's nativity scene</td><td>Being set up in the square</td><td>Unveiling date not yet announced</td></tr>
 <tr><td>Piazza Navona Christmas market</td><td>From early December (not before 1 Dec) to 6 January 2027</td><td>Window confirmed, opening day not yet announced</td></tr>
-<tr><td>Via del Corso lights</td><td>Installed in early November, usually lit in early December</td><td>Switch-on date not announced</td></tr>
+<tr><td>Via del Corso lights and city tree</td><td>Lights installed in early November. In 2025 they were switched on, together with the city tree in Piazza del Popolo, on 8 December at 6:30pm</td><td>2026 date not yet announced</td></tr>
 <tr><td>Feast of the Immaculate Conception</td><td>Tue 8 December 2026, public holiday</td><td>Fixed date</td></tr>
 <tr><td>Epiphany, end of the season</td><td>Wed 6 January 2027</td><td>Fixed date</td></tr>
 </tbody>
@@ -840,7 +840,7 @@ body="""
 <ul>
 <li><b>Via del Corso:</b> the main shopping street, lit from Piazza Venezia towards Piazza del Popolo. It's pedestrian-heavy in the evening, so see it from the side streets or on foot for a few minutes.</li>
 <li><b>Via dei Condotti and the Spanish Steps:</b> the luxury street and the square below the Steps, usually the most photographed decorations in the city.</li>
-<li><b>Piazza Venezia:</b> where the city's official tree usually stands, in front of the Vittoriano.</li>
+<li><b>Piazza del Popolo:</b> where the city's tree stood in 2025, at the north end of Via del Corso. Piazza Venezia, in front of the Vittoriano, is at the other end of the lit street.</li>
 <li><b>Piazza Navona:</b> the traditional Befana market, with stalls, sweets and a carousel, open late into the evening.</li>
 <li><b>St. Peter's Square:</b> the Vatican's tree and nativity scene, lit every evening until the end of the Christmas season.</li>
 <li><b>Trastevere:</b> lights strung across the narrow streets. A good place to end the evening with dinner.</li>
@@ -848,7 +848,7 @@ body="""
 
 <h2>A simple evening route</h2>
 <ol>
-<li><b>5:00pm, Piazza Venezia:</b> start just after dark at the city tree.</li>
+<li><b>5:00pm, Piazza del Popolo:</b> start just after dark at the city tree, then follow Via del Corso south.</li>
 <li><b>Via del Corso and Via dei Condotti:</b> the lit shopping streets, then the Spanish Steps.</li>
 <li><b>Trevi Fountain:</b> lit all year and quieter after dark than at midday.</li>
 <li><b>Piazza Navona:</b> stop at the Christmas market.</li>
@@ -875,9 +875,9 @@ body="""
 """,
 tours="night", tours_title="Evening and night tours",
 faqs=[
-("When are the Christmas lights switched on in Rome in 2026?","The St. Peter's Square tree is lit on 7 December 2026 at 5:30pm. The Via del Corso lights were installed in early November; the city usually switches the lights on in early December and keeps them up until Epiphany on 6 January."),
+("When are the Christmas lights switched on in Rome in 2026?","The St. Peter's Square tree is lit on 7 December 2026 at 5:30pm. The Via del Corso lights were installed in early November; in 2025 they were switched on with the city tree in Piazza del Popolo on 8 December at 6:30pm. The lights stay up until Epiphany on 6 January."),
 ("When does the Piazza Navona Christmas market open in 2026?","It can open from 1 December 2026 and closes on 6 January 2027. The exact opening day is usually announced in late November (it opened on 6 December in 2025 and 8 December in 2024)."),
-("Where are the best Christmas lights in Rome?","Via del Corso, Via dei Condotti and the Spanish Steps, Piazza Venezia, Piazza Navona, St. Peter's Square and Trastevere."),
+("Where are the best Christmas lights in Rome?","Via del Corso, Via dei Condotti and the Spanish Steps, Piazza del Popolo, Piazza Navona, St. Peter's Square and Trastevere."),
 ("Where does the 2026 Vatican Christmas tree come from?","It's a 24-metre white fir from the Pollino National Park, a gift from the town of Terranova di Pollino."),
 ("Is a golf cart tour a good idea in December?","Yes, if you dress warmly. An evening tour links the lights in 2–3 hours, instead of 6–7 km on foot in the cold."),
 ],

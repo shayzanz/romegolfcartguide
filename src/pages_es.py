@@ -270,7 +270,7 @@ related=["tour-privado-carrito-golf-roma","mejores-tours-carrito-golf-roma","rom
 ),
 dict(
 slug="luces-navidad-roma-carrito-golf", en="rome-christmas-lights-tour", nav="Luces de Navidad 2026",
-modified="2026-11-20",
+modified="2026-11-24",
 title="Luces de Navidad en Roma 2026: fechas, dónde verlas y tour nocturno",
 desc="Navidad 2026 en Roma: el árbol de San Pedro se enciende el 7 de diciembre, el mercadillo de Piazza Navona hasta el 6 de enero, las mejores calles con luces y una ruta fácil en carrito de golf.",
 h1="Luces de Navidad en Roma 2026: fechas, dónde verlas y cómo recorrerlas",
@@ -279,14 +279,14 @@ img=COLOSSEUM_NIGHT, img_alt="El Coliseo iluminado de noche",
 answer="En 2026 el árbol de Navidad de la Plaza de San Pedro se enciende el lunes 7 de diciembre a las 17:30. El mercadillo de Piazza Navona puede abrir desde el 1 de diciembre y dura hasta la Epifanía, el 6 de enero de 2027. Las luces de Via del Corso se instalaron a principios de noviembre y suelen encenderse a principios de diciembre. Los mejores sitios son Via del Corso, Via dei Condotti y la Plaza de España, Piazza Venezia, Piazza Navona, la Plaza de San Pedro y el Trastevere. Un tour de tarde de 2–3 horas en carrito de golf recorre casi todos.",
 body="""
 <h2>Navidad 2026 en Roma: las fechas</h2>
-<p>Comprobado el 20 de noviembre de 2026. Roma no suele anunciar con mucha antelación cuándo se encienden las luces, así que solo ponemos lo que ya se ha publicado.</p>
+<p>Comprobado el 24 de noviembre de 2026. Roma no suele anunciar con mucha antelación cuándo se encienden las luces, así que solo ponemos lo que ya se ha publicado.</p>
 <div class="tablewrap"><table>
 <thead><tr><th>Qué</th><th>Cuándo</th><th>Estado</th></tr></thead>
 <tbody>
 <tr><td>Encendido del árbol de San Pedro</td><td>Lunes 7 de diciembre de 2026, 17:30</td><td>Confirmado por el Vaticano</td></tr>
 <tr><td>Belén de la Plaza de San Pedro</td><td>Se está montando en la plaza</td><td>Fecha de inauguración sin anunciar</td></tr>
 <tr><td>Mercadillo de Piazza Navona</td><td>Desde principios de diciembre (no antes del 1) hasta el 6 de enero de 2027</td><td>Periodo confirmado, día de apertura aún sin anunciar</td></tr>
-<tr><td>Luces de Via del Corso</td><td>Instaladas a principios de noviembre, suelen encenderse a principios de diciembre</td><td>Fecha de encendido sin anunciar</td></tr>
+<tr><td>Luces de Via del Corso y árbol de la ciudad</td><td>Luces instaladas a principios de noviembre. En 2025 se encendieron, junto al árbol de Piazza del Popolo, el 8 de diciembre a las 18:30</td><td>Fecha de 2026 sin anunciar</td></tr>
 <tr><td>Inmaculada Concepción</td><td>Martes 8 de diciembre de 2026, festivo</td><td>Fecha fija</td></tr>
 <tr><td>Epifanía, fin de la temporada</td><td>Miércoles 6 de enero de 2027</td><td>Fecha fija</td></tr>
 </tbody>
@@ -297,7 +297,7 @@ body="""
 <ul>
 <li><b>Via del Corso:</b> la gran calle comercial, iluminada desde Piazza Venezia hacia Piazza del Popolo.</li>
 <li><b>Via dei Condotti y Plaza de España:</b> la calle de las grandes marcas y la plaza al pie de la escalinata, las decoraciones más fotografiadas de la ciudad.</li>
-<li><b>Piazza Venezia:</b> donde suele ponerse el árbol oficial de la ciudad, delante del Vittoriano.</li>
+<li><b>Piazza del Popolo:</b> donde estuvo el árbol de la ciudad en 2025, al final de Via del Corso. Piazza Venezia, delante del Vittoriano, está en el otro extremo de la calle iluminada.</li>
 <li><b>Piazza Navona:</b> el mercadillo tradicional de la Befana, con puestos, dulces y tiovivo, abierto hasta tarde.</li>
 <li><b>Plaza de San Pedro:</b> el árbol del Vaticano y el belén, iluminados cada tarde hasta el final de la Navidad.</li>
 <li><b>Trastevere:</b> luces colgadas sobre las calles estrechas, ideal para cenar al final.</li>
@@ -305,7 +305,7 @@ body="""
 
 <h2>Una ruta sencilla de tarde</h2>
 <ol>
-<li><b>17:00, Piazza Venezia:</b> empieza nada más anochecer, en el árbol de la ciudad.</li>
+<li><b>17:00, Piazza del Popolo:</b> empieza nada más anochecer, en el árbol de la ciudad, y baja por Via del Corso.</li>
 <li><b>Via del Corso y Via dei Condotti</b> hasta la Plaza de España.</li>
 <li><b>Fontana di Trevi:</b> iluminada todo el año y más tranquila de noche.</li>
 <li><b>Piazza Navona:</b> parada en el mercadillo.</li>
@@ -325,12 +325,69 @@ body="""
 """,
 tours="night",
 faqs=[
-("¿Cuándo se encienden las luces de Navidad en Roma en 2026?","El árbol de la Plaza de San Pedro se enciende el 7 de diciembre de 2026 a las 17:30. Las luces de Via del Corso se instalaron a principios de noviembre; la ciudad suele encenderlas a principios de diciembre y las mantiene hasta el 6 de enero."),
+("¿Cuándo se encienden las luces de Navidad en Roma en 2026?","El árbol de la Plaza de San Pedro se enciende el 7 de diciembre de 2026 a las 17:30. Las luces de Via del Corso se instalaron a principios de noviembre; en 2025 se encendieron con el árbol de Piazza del Popolo el 8 de diciembre a las 18:30. Las luces se quedan hasta el 6 de enero."),
 ("¿Cuándo abre el mercadillo de Navidad de Piazza Navona en 2026?","Puede abrir desde el 1 de diciembre de 2026 y cierra el 6 de enero de 2027. El día exacto se suele anunciar a finales de noviembre (en 2025 abrió el 6 de diciembre y en 2024 el 8)."),
 ("¿Dónde están las mejores luces de Navidad de Roma?","Via del Corso, Via dei Condotti y la Plaza de España, Piazza Venezia, Piazza Navona, la Plaza de San Pedro y el Trastevere."),
 ("¿De dónde viene el árbol de Navidad del Vaticano de 2026?","Es un abeto blanco de 24 metros del Parque Nacional del Pollino, regalo del municipio de Terranova di Pollino."),
 ("¿Merece la pena un tour en carrito de golf en diciembre?","Sí, si vas abrigado. Un tour de tarde une las luces en 2–3 horas, en lugar de 6–7 km a pie con frío."),
 ],
 related=["roma-de-noche-carrito-golf","mejores-tours-carrito-golf-roma","tour-privado-carrito-golf-roma","roma-en-carrito-de-golf-con-ninos"],
+),
+]
+
+def gl(loc, tid, cid, text):
+    return (f'<a href="https://www.getyourguide.com/{loc}/-t{tid}/?partner_id=EQTZMZ9&utm_medium=online_publisher&cmp=rgcg-{cid}" '
+            f'target="_blank" rel="sponsored nofollow noopener">{text}</a>')
+
+ROWS = [(401080,"vespa-highlights","1,5 h","4,9 (844)"),(977450,"vespa-panoramic","1,5 h","4,9 (717)"),(701881,"vespa-hotel","3 h","5,0 (268)"),
+        (26098,"vespa-night","3 h","4,9 (91)"),(26052,"vespa-halfday","3 h","5,0 (68)"),(619291,"vespa-photo","1,5 h","4,8 (32)")]
+NAMES_ES = ["Tour Vespa con sidecar por lo más destacado, con helado","Experiencia panorámica en sidecar de 90 minutos","Tour en sidecar con recogida en el hotel y helado","Tour en Vespa de noche con conductor y guía privado","Medio día con conductor privado","Tour en Vespa con sesión de fotos profesional"]
+NAMES_DE = ["Highlights-Tour im Vespa-Beiwagen mit Eis","90-Minuten-Panoramafahrt im Beiwagen","Beiwagen-Tour mit Hotelabholung und Eis","Vespa-Tour bei Nacht mit Fahrer und Privatguide","Halbtagestour mit Privatfahrer","Vespa-Tour mit professionellem Fotoshooting"]
+
+def table(loc, names, h, sfx):
+    rows = "".join(f"<tr><td>{gl(loc,tid,cid+sfx,n)}</td><td>{d}</td><td>{r}</td></tr>" for (tid,cid,d,r),n in zip(ROWS,names))
+    return f'<div class="tablewrap"><table>\n<thead><tr><th>{h[0]}</th><th>{h[1]}</th><th>{h[2]}</th></tr></thead>\n<tbody>{rows}</tbody></table></div>'
+
+PAGES += [
+dict(
+slug="tour-vespa-roma", en="vespa-tour-rome", nav="Tours en Vespa",
+modified="2026-11-24",
+title="Tour en Vespa por Roma: sidecar, con conductor o conduciendo tú (2026)",
+desc="Tours en Vespa por Roma comparados: sidecar, de pasajero con conductor, de noche y con sesión de fotos. Valoraciones, duración y cómo elegir. No hace falta carné.",
+h1="Tours en Vespa por Roma",
+lead="Roma desde el asiento de atrás de una Vespa o desde un sidecar. Cómo se diferencian los formatos y cuáles valoran mejor los viajeros.",
+img=TRASTEVERE, img_alt="Una calle del Trastevere, en Roma",
+answer="La mayoría de los tours en Vespa por Roma duran entre 1,5 y 3 horas con un conductor profesional: vas de pasajero o en el sidecar, así que no necesitas carné. Entre los mejor valorados están el tour en sidecar de 1,5 horas con helado (4,9/5 con 844 opiniones en GetYourGuide) y el de 3 horas con recogida en el hotel (5/5 con 268 opiniones).",
+body="""
+<p>Valoraciones y número de opiniones según GetYourGuide en noviembre de 2026.</p>
+
+<h2>Tres formas de hacer un tour en Vespa</h2>
+<ul>
+<li><b>En sidecar:</b> vas sentado en el sidecar al lado del conductor. Es la opción más fácil para subir y bajar, y la que sale mejor en las fotos.</li>
+<li><b>De pasajero con conductor:</b> vas detrás de un conductor profesional, que también hace de guía. Privado y flexible.</li>
+<li><b>Conduciendo tú:</b> llevas tu propia Vespa detrás del guía. Necesitas carné válido y experiencia de verdad con scooter: el tráfico de Roma no es sitio para aprender.</li>
+</ul>
+
+<h2>Tours en Vespa mejor valorados</h2>
+""" + table("es-es", NAMES_ES, ("Tour","Duración","Valoración (opiniones)"), "-es") + """
+
+<h2>¿Vespa o carrito de golf?</h2>
+<p>La Vespa es más divertida y más de película, pero va mejor para una o dos personas que se sienten cómodas en moto. El <a href="/es/mejores-tours-carrito-golf-roma/">carrito de golf</a> es mejor para familias, personas mayores, quien lleva bolso o cámara y los días de lluvia, porque casi todos tienen techo.</p>
+
+<h2>Consejos</h2>
+<ul>
+<li>El casco lo dan ellos y es obligatorio. Lleva zapato cerrado y evita ropa larga y suelta.</li>
+<li>En verano, los tours de noche son más frescos, y los monumentos iluminados se ven muy bien desde la Vespa.</li>
+<li>Si no sabes si cabes en el sidecar, dile al operador tu altura y tu peso antes de reservar.</li>
+</ul>
+""",
+tours="best", gyg_ids="401080,977450,701881,26098",
+faqs=[
+("¿Necesito carné para un tour en Vespa por Roma?","No, si vas de pasajero o en el sidecar, que es como funcionan casi todos los tours. Solo los tours en los que conduces tú piden carné válido."),
+("¿Cuánto dura un tour en Vespa por Roma?","Normalmente entre 1,5 y 3 horas."),
+("¿Cuál es el mejor tour en Vespa por Roma?","Entre los mejor valorados en GetYourGuide están el tour en sidecar con helado (4,9/5, 844 opiniones) y el tour en sidecar con recogida en el hotel (5/5, 268 opiniones)."),
+("¿Vespa o carrito de golf?","Vespa para parejas con ganas de aventura; carrito de golf para familias, personas mayores y quien prefiere un asiento con techo."),
+],
+related=["roma-sin-caminar","mejores-tours-carrito-golf-roma","roma-de-noche-carrito-golf","precio-tour-carrito-golf-roma"],
 ),
 ]

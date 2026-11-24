@@ -2,6 +2,36 @@
 
 Le voci più recenti stanno in cima.
 
+## 2026-11-24: GO #4, correzione Natale e Vespa in ES/DE
+**Dati visti:**
+- Search Console, ultimi 7 giorni:
+  - best: 102 impressioni, pos. 32, 2 clic;
+  - prezzi: 28 impressioni, pos. 10.5;
+  - notte: 21 impressioni, pos. 10.6;
+  - Natale ES 18 impressioni a pos. 10.5 e DE 12 a pos. 10.6, leggermente giù da 7–9 dopo la riscrittura (oscillazione normale);
+  - Vespa EN: pos. 8.8;
+  - scheda gyg-aqueducts: pos. 9.4;
+  - "worth it": pos. 6.7.
+- GA4, primi dati: 1 sessione, 1 `affiliate_click`, 1 `finder_search`. Probabilmente il test di Shay su Viator.
+
+**Fatto:**
+1. **Correzione Natale EN/ES/DE.** Il 20/11 avevo scritto che l'albero della città sta di solito a Piazza Venezia. Secondo RomaSette (4/12/2025), nel 2025 l'albero era a **Piazza del Popolo**, acceso l'8/12 alle 18:30 insieme alle luminarie di Via del Corso.
+   - Aggiornati tabella, lista dei luoghi, percorso (ora parte da Piazza del Popolo) e FAQ, con "data 2026 non ancora annunciata".
+   - Mercatino di Navona: ancora nessuna data di apertura ufficiale (finestra dal 1/12 al 6/1; RomaVisiteGuidate, aggiornato il 2/11).
+   - Data "verificato" passata al 24/11.
+2. **Nuove pagine /es/tour-vespa-roma/ e /de/vespa-tour-rom/**, versioni native della guida Vespa EN, che è in pos. 8.8. Le pagine ES/DE di solito salgono in fretta.
+   - Link GYG localizzati (`es-es` / `de-de`) con campagne `-es` / `-de`; widget GYG nella lingua giusta.
+   - hreflang collegato a /vespa-tour-rome/.
+   - intl.py ora supporta `gyg_ids` nelle guide ES/DE.
+
+**URL toccati:** /rome-christmas-lights-tour/, /es/luces-navidad-roma-carrito-golf/, /de/weihnachtsbeleuchtung-rom-golfcart/ (solo correzioni di date e fatti), /es/tour-vespa-roma/ e /de/vespa-tour-rom/ (nuove), home ES/DE (lista guide).
+
+**Da misurare / prossimo GO:**
+- dal 27/11: nuovi pin Pinterest;
+- data di apertura del mercatino di Navona e dell'accensione di Via del Corso;
+- Fiat 500 in ES/DE (EN pos. 23, 12 impressioni);
+- sezione "golf buggy" sulla best dopo il 2/12.
+
 ## 2026-11-23: GO #3, quiz "Find your tour" e pagina Biga Tours
 **Dati visti:**
 - Search Console, ultimi 7 giorni:

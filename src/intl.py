@@ -115,7 +115,7 @@ def guide(p, L, mod, ctx):
 <section class="section" style="padding-top:0">
   <div class="wrap">
     <h2>{L['fits_h']}</h2>
-    <div class="tourlist-wrap" data-tours="{p['tours']}"></div>
+    {('<div data-gyg-ids="' + p['gyg_ids'] + '" data-gyg-title="" data-gyg-note=""></div>') if p.get('gyg_ids') else ('<div class="tourlist-wrap" data-tours="' + p['tours'] + '"></div>')}
     <p class="disclose">{html.escape(L['disclose'])}</p>
   </div>
 </section>

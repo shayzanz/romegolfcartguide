@@ -270,7 +270,7 @@ related=["private-golfcart-tour-rom","beste-golfcart-touren-rom","rom-golfcart-t
 ),
 dict(
 slug="weihnachtsbeleuchtung-rom-golfcart", en="rome-christmas-lights-tour", nav="Weihnachtsbeleuchtung 2026",
-modified="2026-11-20",
+modified="2026-11-24",
 title="Weihnachtsbeleuchtung Rom 2026: Termine, beste Orte & Abendtour",
 desc="Weihnachten 2026 in Rom: Baum am Petersplatz leuchtet ab 7. Dezember, Weihnachtsmarkt Piazza Navona bis 6. Januar, die schönsten Lichterstraßen und eine einfache Route im Golfcart.",
 h1="Weihnachtsbeleuchtung in Rom 2026: Termine, die besten Orte und wie du sie siehst",
@@ -279,14 +279,14 @@ img=COLOSSEUM_NIGHT, img_alt="Das Kolosseum bei Nacht",
 answer="2026 wird der Weihnachtsbaum auf dem Petersplatz am Montag, 7. Dezember, um 17:30 Uhr erleuchtet. Der Weihnachtsmarkt auf der Piazza Navona darf ab dem 1. Dezember öffnen und läuft bis zum Dreikönigstag, dem 6. Januar 2027. Die Lichter in der Via del Corso wurden Anfang November montiert und werden meist Anfang Dezember eingeschaltet. Die schönsten Orte sind Via del Corso, Via dei Condotti und die Spanische Treppe, Piazza Venezia, Piazza Navona, der Petersplatz und Trastevere. Eine 2–3-stündige Abendtour im Golfcart deckt die meisten davon ab.",
 body="""
 <h2>Weihnachten 2026 in Rom: die Termine</h2>
-<p>Stand: 20. November 2026. Rom kündigt das Einschalten der Lichter selten lange vorher an, deshalb stehen hier nur Termine, die bereits veröffentlicht wurden.</p>
+<p>Stand: 24. November 2026. Rom kündigt das Einschalten der Lichter selten lange vorher an, deshalb stehen hier nur Termine, die bereits veröffentlicht wurden.</p>
 <div class="tablewrap"><table>
 <thead><tr><th>Was</th><th>Wann</th><th>Status</th></tr></thead>
 <tbody>
 <tr><td>Baum auf dem Petersplatz wird erleuchtet</td><td>Montag, 7. Dezember 2026, 17:30 Uhr</td><td>Vom Vatikan bestätigt</td></tr>
 <tr><td>Krippe auf dem Petersplatz</td><td>Wird gerade auf dem Platz aufgebaut</td><td>Termin der Enthüllung noch offen</td></tr>
 <tr><td>Weihnachtsmarkt Piazza Navona</td><td>Ab Anfang Dezember (nicht vor dem 1.) bis 6. Januar 2027</td><td>Zeitraum bestätigt, Eröffnungstag noch offen</td></tr>
-<tr><td>Lichter in der Via del Corso</td><td>Anfang November montiert, meist Anfang Dezember eingeschaltet</td><td>Termin noch nicht angekündigt</td></tr>
+<tr><td>Lichter in der Via del Corso und Baum der Stadt</td><td>Lichter Anfang November montiert. 2025 wurden sie zusammen mit dem Baum auf der Piazza del Popolo am 8. Dezember um 18:30 Uhr eingeschaltet</td><td>Termin 2026 noch nicht angekündigt</td></tr>
 <tr><td>Mariä Empfängnis</td><td>Dienstag, 8. Dezember 2026, Feiertag</td><td>Fester Termin</td></tr>
 <tr><td>Dreikönigstag, Ende der Saison</td><td>Mittwoch, 6. Januar 2027</td><td>Fester Termin</td></tr>
 </tbody>
@@ -297,7 +297,7 @@ body="""
 <ul>
 <li><b>Via del Corso:</b> die große Einkaufsstraße, beleuchtet von der Piazza Venezia Richtung Piazza del Popolo.</li>
 <li><b>Via dei Condotti und Spanische Treppe:</b> die Luxusstraße und der Platz unter der Treppe, die meistfotografierte Dekoration der Stadt.</li>
-<li><b>Piazza Venezia:</b> hier steht meist der offizielle Weihnachtsbaum der Stadt, vor dem Vittoriano.</li>
+<li><b>Piazza del Popolo:</b> hier stand 2025 der Weihnachtsbaum der Stadt, am Nordende der Via del Corso. Die Piazza Venezia vor dem Vittoriano liegt am anderen Ende der beleuchteten Straße.</li>
 <li><b>Piazza Navona:</b> der traditionelle Befana-Markt mit Ständen, Süßigkeiten und Karussell, bis spät abends geöffnet.</li>
 <li><b>Petersplatz:</b> der Baum des Vatikans und die Krippe, jeden Abend beleuchtet bis zum Ende der Weihnachtszeit.</li>
 <li><b>Trastevere:</b> Lichterketten über den engen Gassen, ideal zum Abendessen am Schluss.</li>
@@ -305,7 +305,7 @@ body="""
 
 <h2>Eine einfache Abendroute</h2>
 <ol>
-<li><b>17:00 Uhr, Piazza Venezia:</b> Start kurz nach Einbruch der Dunkelheit am Baum der Stadt.</li>
+<li><b>17:00 Uhr, Piazza del Popolo:</b> Start kurz nach Einbruch der Dunkelheit am Baum der Stadt, dann die Via del Corso hinunter.</li>
 <li><b>Via del Corso und Via dei Condotti</b> bis zur Spanischen Treppe.</li>
 <li><b>Trevi-Brunnen:</b> das ganze Jahr beleuchtet und abends ruhiger als mittags.</li>
 <li><b>Piazza Navona:</b> Halt am Weihnachtsmarkt.</li>
@@ -325,12 +325,69 @@ body="""
 """,
 tours="night",
 faqs=[
-("Wann wird die Weihnachtsbeleuchtung in Rom 2026 eingeschaltet?","Der Baum auf dem Petersplatz wird am 7. Dezember 2026 um 17:30 Uhr erleuchtet. Die Lichter in der Via del Corso wurden Anfang November montiert; die Stadt schaltet sie meist Anfang Dezember ein und lässt sie bis zum 6. Januar hängen."),
+("Wann wird die Weihnachtsbeleuchtung in Rom 2026 eingeschaltet?","Der Baum auf dem Petersplatz wird am 7. Dezember 2026 um 17:30 Uhr erleuchtet. Die Lichter in der Via del Corso wurden Anfang November montiert; 2025 wurden sie mit dem Baum auf der Piazza del Popolo am 8. Dezember um 18:30 Uhr eingeschaltet. Die Lichter hängen bis zum 6. Januar."),
 ("Wann öffnet der Weihnachtsmarkt auf der Piazza Navona 2026?","Er darf ab dem 1. Dezember 2026 öffnen und schließt am 6. Januar 2027. Der genaue Tag wird meist Ende November bekanntgegeben (2025 war es der 6. Dezember, 2024 der 8. Dezember)."),
 ("Wo ist die schönste Weihnachtsbeleuchtung in Rom?","Via del Corso, Via dei Condotti und Spanische Treppe, Piazza Venezia, Piazza Navona, Petersplatz und Trastevere."),
 ("Woher kommt der Weihnachtsbaum des Vatikans 2026?","Es ist eine 24 Meter hohe Weißtanne aus dem Nationalpark Pollino, ein Geschenk der Gemeinde Terranova di Pollino."),
 ("Lohnt sich eine Golfcart-Tour im Dezember?","Ja, wenn du dich warm anziehst. Eine Abendtour verbindet die Lichter in 2–3 Stunden statt 6–7 km zu Fuß in der Kälte."),
 ],
 related=["rom-bei-nacht-golfcart","beste-golfcart-touren-rom","private-golfcart-tour-rom","rom-golfcart-tour-mit-kindern"],
+),
+]
+
+def gl(loc, tid, cid, text):
+    return (f'<a href="https://www.getyourguide.com/{loc}/-t{tid}/?partner_id=EQTZMZ9&utm_medium=online_publisher&cmp=rgcg-{cid}" '
+            f'target="_blank" rel="sponsored nofollow noopener">{text}</a>')
+
+ROWS = [(401080,"vespa-highlights","1,5 h","4,9 (844)"),(977450,"vespa-panoramic","1,5 h","4,9 (717)"),(701881,"vespa-hotel","3 h","5,0 (268)"),
+        (26098,"vespa-night","3 h","4,9 (91)"),(26052,"vespa-halfday","3 h","5,0 (68)"),(619291,"vespa-photo","1,5 h","4,8 (32)")]
+NAMES_ES = ["Tour Vespa con sidecar por lo más destacado, con helado","Experiencia panorámica en sidecar de 90 minutos","Tour en sidecar con recogida en el hotel y helado","Tour en Vespa de noche con conductor y guía privado","Medio día con conductor privado","Tour en Vespa con sesión de fotos profesional"]
+NAMES_DE = ["Highlights-Tour im Vespa-Beiwagen mit Eis","90-Minuten-Panoramafahrt im Beiwagen","Beiwagen-Tour mit Hotelabholung und Eis","Vespa-Tour bei Nacht mit Fahrer und Privatguide","Halbtagestour mit Privatfahrer","Vespa-Tour mit professionellem Fotoshooting"]
+
+def table(loc, names, h, sfx):
+    rows = "".join(f"<tr><td>{gl(loc,tid,cid+sfx,n)}</td><td>{d}</td><td>{r}</td></tr>" for (tid,cid,d,r),n in zip(ROWS,names))
+    return f'<div class="tablewrap"><table>\n<thead><tr><th>{h[0]}</th><th>{h[1]}</th><th>{h[2]}</th></tr></thead>\n<tbody>{rows}</tbody></table></div>'
+
+PAGES += [
+dict(
+slug="vespa-tour-rom", en="vespa-tour-rome", nav="Vespa-Touren",
+modified="2026-11-24",
+title="Vespa-Tour in Rom: Beiwagen, mit Fahrer oder selbst fahren? (2026)",
+desc="Vespa-Touren in Rom im Vergleich: Beiwagen, als Sozius mit Fahrer, bei Nacht und mit Fotoshooting. Bewertungen, Dauer und wie du wählst. Kein Führerschein nötig.",
+h1="Vespa-Touren in Rom",
+lead="Rom vom Rücksitz einer Vespa oder aus dem Beiwagen. So unterscheiden sich die Formate, und diese Touren bewerten Reisende am besten.",
+img=TRASTEVERE, img_alt="Eine Gasse in Trastevere, Rom",
+answer="Die meisten Vespa-Touren in Rom dauern 1,5 bis 3 Stunden mit einem professionellen Fahrer: Du fährst als Sozius oder im Beiwagen mit, ein Führerschein ist also nicht nötig. Besonders gut bewertet sind die 1,5-stündige Beiwagen-Tour mit Eis (4,9/5 bei 844 Bewertungen auf GetYourGuide) und die 3-stündige Tour mit Hotelabholung (5/5 bei 268 Bewertungen).",
+body="""
+<p>Bewertungen und Anzahl laut GetYourGuide im November 2026.</p>
+
+<h2>Drei Arten, Rom mit der Vespa zu erleben</h2>
+<ul>
+<li><b>Im Beiwagen:</b> Du sitzt neben dem Fahrer im Beiwagen. Am einfachsten zum Ein- und Aussteigen und am besten für Fotos.</li>
+<li><b>Als Sozius mit Fahrer:</b> Du sitzt hinter einem professionellen Fahrer, der gleichzeitig dein Guide ist. Privat und flexibel.</li>
+<li><b>Selbst fahren:</b> Du fährst deine eigene Vespa hinter dem Guide her. Dafür brauchst du einen gültigen Führerschein und echte Rollererfahrung: Der Verkehr in Rom ist kein Ort zum Üben.</li>
+</ul>
+
+<h2>Gut bewertete Vespa-Touren</h2>
+""" + table("de-de", NAMES_DE, ("Tour","Dauer","Bewertung (Anzahl)"), "-de") + """
+
+<h2>Vespa oder Golfcart?</h2>
+<p>Die Vespa macht mehr Spaß und hat mehr Filmflair, passt aber vor allem zu ein oder zwei Personen, die sich auf einem Roller wohlfühlen. Ein <a href="/de/beste-golfcart-touren-rom/">Golfcart</a> ist besser für Familien, ältere Reisende, alle mit Tasche oder Kamera und für Regentage, denn die meisten Carts haben ein Dach.</p>
+
+<h2>Tipps</h2>
+<ul>
+<li>Helme werden gestellt und sind Pflicht. Trag geschlossene Schuhe und keine langen, weiten Kleider.</li>
+<li>Im Sommer sind Nachttouren angenehm kühl, und die beleuchteten Monumente sehen von der Vespa aus besonders schön aus.</li>
+<li>Wenn du unsicher bist, ob du in den Beiwagen passt, sag dem Anbieter vorher deine Größe und dein Gewicht.</li>
+</ul>
+""",
+tours="best", gyg_ids="401080,977450,701881,26098",
+faqs=[
+("Brauche ich einen Führerschein für eine Vespa-Tour in Rom?","Nein, wenn du als Sozius oder im Beiwagen mitfährst, so wie bei den meisten Touren. Nur bei Touren, bei denen du selbst fährst, brauchst du einen gültigen Führerschein."),
+("Wie lange dauert eine Vespa-Tour in Rom?","Meist 1,5 bis 3 Stunden."),
+("Welche ist die beste Vespa-Tour in Rom?","Zu den am besten bewerteten auf GetYourGuide gehören die Beiwagen-Tour mit Eis (4,9/5, 844 Bewertungen) und die Beiwagen-Tour mit Hotelabholung (5/5, 268 Bewertungen)."),
+("Vespa oder Golfcart?","Vespa für Paare, die Abenteuer wollen; Golfcart für Familien, Senioren und alle, die lieber unter einem Dach sitzen."),
+],
+related=["rom-ohne-laufen","beste-golfcart-touren-rom","rom-bei-nacht-golfcart","golfcart-tour-rom-preise"],
 ),
 ]
