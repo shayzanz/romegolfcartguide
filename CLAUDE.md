@@ -78,6 +78,12 @@ Shay scrive GO circa ogni 1–2 giorni. A ogni GO, nell'ordine:
 - Eventi GA4: `quiz_open`, `quiz_complete` (people, interest, need, results), `affiliate_click`/`whatsapp_click` con `source=quiz`.
 - Idee in sospeso: pagina o sezione "golf buggy" (oggi pos. ~25 sulla pagina best; aggiungere una sezione alla best dopo il 2/12 per la regola dei 10–14 giorni).
 
+## Backlink (approvato da Shay il 24/11)
+- Al prossimo GO preparare un piano per i primi 10 link onesti: blog di viaggio (bambini, anziani, crociere Civitavecchia), Reddit/Quora con link solo quando serve, Medium/LinkedIn, forum di crociere.
+- Per ognuno: dove, a chi, messaggio pronto. Shay approva e pubblica o invia lui.
+- Mai link comprati, scambi in massa o spam.
+- Dati per i report (Ubersuggest, 24/11): "golf cart tour rome" circa 12.100 ricerche/mese a livello globale, CPC circa 5 $; varianti principali tra 30 e 210 ricerche/mese.
+
 ## Pinterest
 - Account `bestplacesitaly5` (nome "Best Places Italy"), bacheca "Rome Travel Tips".
 - Il 9 novembre 2026 Shay ha caricato 10 pin (1000×1500) programmati uno al giorno.
